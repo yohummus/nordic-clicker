@@ -1,0 +1,10 @@
+.DS_Store
+.venv
+**/build*/
+*.kicad_prl
+*-backups
+*.bak
+~*
+\#*
+_autosave*
+fp-info-cache

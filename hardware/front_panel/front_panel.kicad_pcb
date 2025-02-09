@@ -1,0 +1,4133 @@
+(kicad_pcb
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(general
+		(thickness 1.6)
+		(legacy_teardrops no)
+	)
+	(paper "A4")
+	(layers
+		(0 "F.Cu" signal)
+		(31 "B.Cu" signal)
+		(32 "B.Adhes" user "B.Adhesive")
+		(33 "F.Adhes" user "F.Adhesive")
+		(34 "B.Paste" user)
+		(35 "F.Paste" user)
+		(36 "B.SilkS" user "B.Silkscreen")
+		(37 "F.SilkS" user "F.Silkscreen")
+		(38 "B.Mask" user)
+		(39 "F.Mask" user)
+		(40 "Dwgs.User" user "User.Drawings")
+		(41 "Cmts.User" user "User.Comments")
+		(42 "Eco1.User" user "User.Eco1")
+		(43 "Eco2.User" user "User.Eco2")
+		(44 "Edge.Cuts" user)
+		(45 "Margin" user)
+		(46 "B.CrtYd" user "B.Courtyard")
+		(47 "F.CrtYd" user "F.Courtyard")
+		(48 "B.Fab" user)
+		(49 "F.Fab" user)
+		(50 "User.1" user)
+		(51 "User.2" user)
+		(52 "User.3" user)
+		(53 "User.4" user)
+		(54 "User.5" user)
+		(55 "User.6" user)
+		(56 "User.7" user)
+		(57 "User.8" user)
+		(58 "User.9" user)
+	)
+	(setup
+		(pad_to_mask_clearance 0)
+		(allow_soldermask_bridges_in_footprints no)
+		(pcbplotparams
+			(layerselection 0x00010fc_ffffffff)
+			(plot_on_all_layers_selection 0x0000000_00000000)
+			(disableapertmacros no)
+			(usegerberextensions no)
+			(usegerberattributes yes)
+			(usegerberadvancedattributes yes)
+			(creategerberjobfile yes)
+			(dashed_line_dash_ratio 12.000000)
+			(dashed_line_gap_ratio 3.000000)
+			(svgprecision 4)
+			(plotframeref no)
+			(viasonmask no)
+			(mode 1)
+			(useauxorigin no)
+			(hpglpennumber 1)
+			(hpglpenspeed 20)
+			(hpglpendiameter 15.000000)
+			(pdf_front_fp_property_popups yes)
+			(pdf_back_fp_property_popups yes)
+			(dxfpolygonmode yes)
+			(dxfimperialunits yes)
+			(dxfusepcbnewfont yes)
+			(psnegative no)
+			(psa4output no)
+			(plotreference yes)
+			(plotvalue yes)
+			(plotfptext yes)
+			(plotinvisibletext no)
+			(sketchpadsonfab no)
+			(subtractmaskfromsilk no)
+			(outputformat 1)
+			(mirror no)
+			(drillshape 1)
+			(scaleselection 1)
+			(outputdirectory "")
+		)
+	)
+	(net 0 "")
+	(footprint "KiPLM_Footprints:BTNK03"
+		(layer "F.Cu")
+		(uuid "150cd467-ff66-4054-bef0-6066cb4a9a81")
+		(at 103 117)
+		(property "Reference" "M1"
+			(at 0 -11.89 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e890caf6-53c2-4d62-9790-7b1bbf8768c5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "Dark gray"
+			(at 0 -10.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c75b401-b836-49ff-9d0e-5ce8ba897ac8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "KiPLM_Footprints:BTNK03"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6e9df64-8b1c-4e13-82dc-2fc3f46b52a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/1457/ksa_ksl.pdf"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "13a39e1f-ab4b-4f43-84d1-1e3a9566c78d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Switch Cap 8.5 x 3.8 mm"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d4add4f-1daf-4100-bb78-128c2a68b1aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "IPN" "MEC-0000-0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5f11397a-7a0d-424f-bfa2-e4dd6974e7a3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "BTNK0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f8cc45f-bb6f-4c85-8248-3cf0cbb6b3ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "C&K Switches"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "de0d5906-6bce-4ec6-bc8a-277403619ac0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Symbol" "KiPLM_Symbols:BTNK03"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16db2e0f-fa5f-4284-9dd9-97e1b3a7e1db")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser-PN" "611-BTNK0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2de7d872-8419-4f8a-bf20-0623c02a93b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DigiKey-PN" "BTNK0310-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91656b1c-eedb-42a5-8332-c6f59e179876")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "KiPLM_Footprints:BTNK03")
+		(path "/a82105ee-f1ec-497b-b941-81c0ba5fefb8")
+		(sheetname "Root")
+		(sheetfile "front_panel.kicad_sch")
+		(fp_line
+			(start -2.5 2.35)
+			(end -2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "188b016c-4a4e-44a9-8f27-d4e044151d8a")
+		)
+		(fp_line
+			(start 2.5 2.35)
+			(end 2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "1e4916c0-6cc2-4fa9-9f2b-feb2fd9eb66e")
+		)
+		(fp_arc
+			(start -2.5 -2.35)
+			(mid 0 -4.85)
+			(end 2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b4ad9978-a90d-41c1-96d6-41a3369beea0")
+		)
+		(fp_arc
+			(start 2.5 2.35)
+			(mid 0 4.85)
+			(end -2.5 2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "62fbb3e5-f4c6-4b33-86a9-7a2cde3f5584")
+		)
+		(fp_line
+			(start -1.95 2.35)
+			(end -1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "2eb80403-b44d-4011-bc43-ec9e49909bd3")
+		)
+		(fp_line
+			(start 1.95 2.35)
+			(end 1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "1e35c36f-592a-4e7e-923e-a819e2fc1623")
+		)
+		(fp_arc
+			(start -1.95 -2.35)
+			(mid 0 -4.3)
+			(end 1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "aec60924-48b8-4805-8c2f-305349ab372d")
+		)
+		(fp_arc
+			(start 1.95 2.35)
+			(mid 0 4.3)
+			(end -1.95 2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "187851b2-39a5-4ca5-b284-19201fd76b37")
+		)
+		(fp_line
+			(start -2.9 4.55)
+			(end -2.9 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "c8eb4ab2-92c2-459f-94f4-86603e108ad0")
+		)
+		(fp_line
+			(start -2.6 -4.85)
+			(end 2.6 -4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "f5a0551c-f510-431b-8715-57d3e420984f")
+		)
+		(fp_line
+			(start 2.6 4.85)
+			(end -2.6 4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "01185c51-0920-4de7-8eaf-c2fbe9552c27")
+		)
+		(fp_line
+			(start 2.9 -4.55)
+			(end 2.9 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "6a43ad4f-f296-4a45-9db2-44aab7248a43")
+		)
+		(fp_arc
+			(start -2.9 -4.55)
+			(mid -2.812132 -4.762132)
+			(end -2.6 -4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "d47250f3-b80c-4de8-a35a-d5ce145df846")
+		)
+		(fp_arc
+			(start -2.6 4.85)
+			(mid -2.812132 4.762132)
+			(end -2.9 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "23359e30-5655-4b08-9cdb-003d2f5850e4")
+		)
+		(fp_arc
+			(start 2.6 -4.85)
+			(mid 2.812132 -4.762132)
+			(end 2.9 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "45c84aae-b900-48b3-8a3c-1c5091fe9f9e")
+		)
+		(fp_arc
+			(start 2.9 4.55)
+			(mid 2.812132 4.762132)
+			(end 2.6 4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "9518aebf-4d9a-4a23-a21e-1400c02183e4")
+		)
+		(fp_line
+			(start -2.8 4.55)
+			(end -2.8 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "345618ac-292a-4da2-96b8-c35689f0277a")
+		)
+		(fp_line
+			(start -2.6 -4.75)
+			(end 2.6 -4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "f2838fe2-d5e4-4596-a835-fe88366eb7ec")
+		)
+		(fp_line
+			(start 2.6 4.75)
+			(end -2.6 4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "8bdb6ca6-e190-44b9-81db-9bb9fbb577ba")
+		)
+		(fp_line
+			(start 2.8 -4.55)
+			(end 2.8 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "37683b7d-8cd5-426d-948f-1d21b145a42e")
+		)
+		(fp_arc
+			(start -2.8 -4.55)
+			(mid -2.741421 -4.691421)
+			(end -2.6 -4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "684ed056-6499-4489-a0a4-3cd1481a297b")
+		)
+		(fp_arc
+			(start -2.6 4.75)
+			(mid -2.741421 4.691421)
+			(end -2.8 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "5c81d535-38cc-4002-95eb-e86dc4013bbb")
+		)
+		(fp_arc
+			(start 2.6 -4.75)
+			(mid 2.741421 -4.691421)
+			(end 2.8 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "62b4f548-dc82-4c40-b871-486ced499a18")
+		)
+		(fp_arc
+			(start 2.8 4.55)
+			(mid 2.741421 4.691421)
+			(end 2.6 4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "164cb43e-15cd-4df8-84a2-0710b45daae4")
+		)
+		(fp_line
+			(start 0 0.5)
+			(end 0 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "User.2")
+			(uuid "de02ebde-4619-4ad7-af64-99b28640ffe6")
+		)
+		(fp_line
+			(start 0.5 0)
+			(end -0.5 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "User.2")
+			(uuid "e2203703-adf0-4b40-9864-79b0491bb4d3")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -8.89 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "572f2877-4fd5-4a18-abdd-4a99a6b68bd9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
+			(offset
+				(xyz -2.8 4.75 -2.6)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 90)
+			)
+		)
+	)
+	(footprint "KiPLM_Footprints:BTNK03"
+		(layer "F.Cu")
+		(uuid "316327a6-4e81-45b0-a1a7-cb9b81060f77")
+		(at 112.5 129)
+		(property "Reference" "M5"
+			(at 0 -11.89 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b8ec8937-fb67-49b8-9fce-712ed4d9fe49")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "Dark gray"
+			(at 0 -10.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "24e15145-aa1d-4cc2-b95b-eabe571a3d8b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "KiPLM_Footprints:BTNK03"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91aa91ee-91d5-4d5f-8330-8a2cb371395e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/1457/ksa_ksl.pdf"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b907cc4a-46be-47a9-b6fe-6a164a3954fb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Switch Cap 8.5 x 3.8 mm"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3e5923a8-2245-403f-933f-c5591955e463")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "IPN" "MEC-0000-0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2b1ec45-7100-4eac-89a3-c081d157b414")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "BTNK0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fa209526-5ad5-4732-8160-056fa9380d0b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "C&K Switches"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c245c37-d28e-4ed6-a3c3-04000fb20dc9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Symbol" "KiPLM_Symbols:BTNK03"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b99c1c1-7fe9-480c-91b4-d2701a9a81cd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser-PN" "611-BTNK0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "13145eaa-5ebc-477a-a962-423db823436d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DigiKey-PN" "BTNK0310-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b6eaafa-5f6d-4ef1-b306-0acc2e4c0f05")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "KiPLM_Footprints:BTNK03")
+		(path "/2464c24c-3bc3-4472-b8d2-ba192d1052b7")
+		(sheetname "Root")
+		(sheetfile "front_panel.kicad_sch")
+		(fp_line
+			(start -2.5 2.35)
+			(end -2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5803778f-3604-4856-a8af-ed48ef36a5e1")
+		)
+		(fp_line
+			(start 2.5 2.35)
+			(end 2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e838fd18-1943-4b2b-8932-5e6740df30e4")
+		)
+		(fp_arc
+			(start -2.5 -2.35)
+			(mid 0 -4.85)
+			(end 2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2889d699-375a-4c13-a1e3-3406474aa5a1")
+		)
+		(fp_arc
+			(start 2.5 2.35)
+			(mid 0 4.85)
+			(end -2.5 2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0efbc930-6f00-4629-a972-e04b09a4457a")
+		)
+		(fp_line
+			(start -1.95 2.35)
+			(end -1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "694f7391-c47e-4c56-9a44-92a38ec8cab9")
+		)
+		(fp_line
+			(start 1.95 2.35)
+			(end 1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "b30e92d0-42b8-45a8-989f-63c2cdbcd72e")
+		)
+		(fp_arc
+			(start -1.95 -2.35)
+			(mid 0 -4.3)
+			(end 1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "9bb4b9f1-0ce8-4c6c-ae15-23bcdb292516")
+		)
+		(fp_arc
+			(start 1.95 2.35)
+			(mid 0 4.3)
+			(end -1.95 2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "c9bef74f-f004-4f02-b3f5-8c89925e44d4")
+		)
+		(fp_line
+			(start -2.9 4.55)
+			(end -2.9 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "83b8ba6b-78be-4627-b5aa-f80d652e3683")
+		)
+		(fp_line
+			(start -2.6 -4.85)
+			(end 2.6 -4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "d98bac6e-8dfa-4da4-9088-e5c21974594c")
+		)
+		(fp_line
+			(start 2.6 4.85)
+			(end -2.6 4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "3fca1506-23bc-4633-b289-870a2fb09017")
+		)
+		(fp_line
+			(start 2.9 -4.55)
+			(end 2.9 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "3fea83c5-d016-4d1f-8ef1-7c9825877a9d")
+		)
+		(fp_arc
+			(start -2.9 -4.55)
+			(mid -2.812132 -4.762132)
+			(end -2.6 -4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "39f0bd50-6539-4cf0-88e6-f85849df9523")
+		)
+		(fp_arc
+			(start -2.6 4.85)
+			(mid -2.812132 4.762132)
+			(end -2.9 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "f76a503a-3082-4d98-82e7-7705b538adb1")
+		)
+		(fp_arc
+			(start 2.6 -4.85)
+			(mid 2.812132 -4.762132)
+			(end 2.9 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "68c947f7-d4c1-4b76-9403-1c1ebde48e14")
+		)
+		(fp_arc
+			(start 2.9 4.55)
+			(mid 2.812132 4.762132)
+			(end 2.6 4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "09257b76-2a20-4db5-b265-cac73759ca90")
+		)
+		(fp_line
+			(start -2.8 4.55)
+			(end -2.8 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "8ea775ff-213a-43d9-b07b-ff3e78bdf658")
+		)
+		(fp_line
+			(start -2.6 -4.75)
+			(end 2.6 -4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "f65bbf21-90b0-4459-992c-36f83158a943")
+		)
+		(fp_line
+			(start 2.6 4.75)
+			(end -2.6 4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "4f48f04a-2d8e-4c2c-b682-6849f05b97ce")
+		)
+		(fp_line
+			(start 2.8 -4.55)
+			(end 2.8 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "a1ba9bc7-2a0c-40c2-8ef1-4571fac4b13d")
+		)
+		(fp_arc
+			(start -2.8 -4.55)
+			(mid -2.741421 -4.691421)
+			(end -2.6 -4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "7307750b-145d-4b81-9b89-0053a6c45512")
+		)
+		(fp_arc
+			(start -2.6 4.75)
+			(mid -2.741421 4.691421)
+			(end -2.8 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "35144fbd-3901-4ff7-9aa7-960f346bffdb")
+		)
+		(fp_arc
+			(start 2.6 -4.75)
+			(mid 2.741421 -4.691421)
+			(end 2.8 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "3557301f-5644-4f83-adf9-59418a66d98e")
+		)
+		(fp_arc
+			(start 2.8 4.55)
+			(mid 2.741421 4.691421)
+			(end 2.6 4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "1ff63566-40ac-4799-8f3c-3f9a4216e769")
+		)
+		(fp_line
+			(start 0 0.5)
+			(end 0 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "User.2")
+			(uuid "7e2ae258-cf98-46d0-9282-081c8ab456ed")
+		)
+		(fp_line
+			(start 0.5 0)
+			(end -0.5 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "User.2")
+			(uuid "a1995908-03d8-4758-a883-76383b0230ef")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -8.89 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "31331c8e-28c0-402d-b018-9c1cf5927052")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
+			(offset
+				(xyz -2.8 4.75 -2.6)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 90)
+			)
+		)
+	)
+	(footprint "KiPLM_Footprints:BTNK03"
+		(layer "F.Cu")
+		(uuid "382c2f85-9c0b-4b10-b441-4c81f7aef635")
+		(at 103 129)
+		(property "Reference" "M4"
+			(at 0 -11.89 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "951a8547-5a84-4f0a-a75d-37fc87e01d99")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "Dark gray"
+			(at 0 -10.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5727e854-1cfa-42c1-bfa1-b6b1f1191c8f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "KiPLM_Footprints:BTNK03"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "00cfac3e-e583-43bf-92c1-3ed300c90a98")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/1457/ksa_ksl.pdf"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7190ae76-ef72-49ff-bd55-a10da280d0d4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Switch Cap 8.5 x 3.8 mm"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "02ec194c-fc6c-4178-976b-455c400938b2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "IPN" "MEC-0000-0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9055d494-351a-4ac7-8c34-18ffa4439281")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "BTNK0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1a6f1b1a-4a9c-4260-9563-75a0c09ec365")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "C&K Switches"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06f9d9bb-7706-4f46-a457-d7e95ebe4189")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Symbol" "KiPLM_Symbols:BTNK03"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "387d4213-2466-4401-bbcf-1f95d5869e99")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser-PN" "611-BTNK0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6f76099b-141a-4d82-b679-c667547db3cd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DigiKey-PN" "BTNK0310-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e3d39e3d-1576-40e7-975e-33b0d3183cf1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "KiPLM_Footprints:BTNK03")
+		(path "/85d4b3a3-f38b-43a5-8e15-7a99ad112d9c")
+		(sheetname "Root")
+		(sheetfile "front_panel.kicad_sch")
+		(fp_line
+			(start -2.5 2.35)
+			(end -2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6b6a7636-176b-4fca-bb60-d9bf8d7cca8f")
+		)
+		(fp_line
+			(start 2.5 2.35)
+			(end 2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e671e8f9-954f-4e20-ac20-36e0ca748a65")
+		)
+		(fp_arc
+			(start -2.5 -2.35)
+			(mid 0 -4.85)
+			(end 2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7b1ce9fd-d79d-494d-80f3-9b09a3efdb66")
+		)
+		(fp_arc
+			(start 2.5 2.35)
+			(mid 0 4.85)
+			(end -2.5 2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "48fa36ef-b847-40fb-87b9-61b9b1a4e63c")
+		)
+		(fp_line
+			(start -1.95 2.35)
+			(end -1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "533fe3ac-310a-4f30-b79b-cf94837e336c")
+		)
+		(fp_line
+			(start 1.95 2.35)
+			(end 1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "e2e7e232-400f-483d-a06d-4ce3f81ceef5")
+		)
+		(fp_arc
+			(start -1.95 -2.35)
+			(mid 0 -4.3)
+			(end 1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "66a3f48d-8ad9-4b07-9485-b9a41b219b65")
+		)
+		(fp_arc
+			(start 1.95 2.35)
+			(mid 0 4.3)
+			(end -1.95 2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "27233528-e340-4357-a62f-45ccd4754092")
+		)
+		(fp_line
+			(start -2.9 4.55)
+			(end -2.9 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "91e78208-1cde-45c1-95e3-f87de13f4a6e")
+		)
+		(fp_line
+			(start -2.6 -4.85)
+			(end 2.6 -4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "d984afe4-947e-4386-b91b-ab89663d42a3")
+		)
+		(fp_line
+			(start 2.6 4.85)
+			(end -2.6 4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "65ca4f40-9eba-4415-b7e8-8838344cb6d4")
+		)
+		(fp_line
+			(start 2.9 -4.55)
+			(end 2.9 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "12854aaa-284f-49b2-9fc1-56f92f736840")
+		)
+		(fp_arc
+			(start -2.9 -4.55)
+			(mid -2.812132 -4.762132)
+			(end -2.6 -4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "1604e73f-d19f-4e1d-a10d-306a48a8771f")
+		)
+		(fp_arc
+			(start -2.6 4.85)
+			(mid -2.812132 4.762132)
+			(end -2.9 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "4911361f-dff0-4b80-98a5-49a2d7c81fc2")
+		)
+		(fp_arc
+			(start 2.6 -4.85)
+			(mid 2.812132 -4.762132)
+			(end 2.9 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "1654276e-f1e9-4481-b644-56696ff0236a")
+		)
+		(fp_arc
+			(start 2.9 4.55)
+			(mid 2.812132 4.762132)
+			(end 2.6 4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "2ef86203-fb2d-4a09-aaee-1815007637f7")
+		)
+		(fp_line
+			(start -2.8 4.55)
+			(end -2.8 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "735a3463-aaed-436d-8c62-44e73a9dea64")
+		)
+		(fp_line
+			(start -2.6 -4.75)
+			(end 2.6 -4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "0c1d83f0-126e-4451-bb12-29acb0c99290")
+		)
+		(fp_line
+			(start 2.6 4.75)
+			(end -2.6 4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "fa058341-b80b-4411-987c-d0e1606bd810")
+		)
+		(fp_line
+			(start 2.8 -4.55)
+			(end 2.8 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "735619e6-fe4e-4ec1-8a23-ed461bbb0659")
+		)
+		(fp_arc
+			(start -2.8 -4.55)
+			(mid -2.741421 -4.691421)
+			(end -2.6 -4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "07e54eb6-d4ac-4cd1-b7c6-a6bed490087c")
+		)
+		(fp_arc
+			(start -2.6 4.75)
+			(mid -2.741421 4.691421)
+			(end -2.8 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "c92ee340-47e5-4184-936f-d175051d433e")
+		)
+		(fp_arc
+			(start 2.6 -4.75)
+			(mid 2.741421 -4.691421)
+			(end 2.8 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "3d024839-3bdc-469b-b637-3e0e3f73cc20")
+		)
+		(fp_arc
+			(start 2.8 4.55)
+			(mid 2.741421 4.691421)
+			(end 2.6 4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "4ee22c61-97ea-40a6-ac00-7967bda73ec3")
+		)
+		(fp_line
+			(start 0 0.5)
+			(end 0 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "User.2")
+			(uuid "15873797-12bd-48b1-af3f-0b7d862e68eb")
+		)
+		(fp_line
+			(start 0.5 0)
+			(end -0.5 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "User.2")
+			(uuid "ca1344dd-3882-49bb-864c-7df0a3d35bac")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -8.89 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "50a8d4b2-c373-4f92-b368-0bfc3ecb6038")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
+			(offset
+				(xyz -2.8 4.75 -2.6)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 90)
+			)
+		)
+	)
+	(footprint "KiPLM_Footprints:BTNK03"
+		(layer "F.Cu")
+		(uuid "4640ab6a-c245-49fe-8dd7-17e509cac716")
+		(at 122 129)
+		(property "Reference" "M6"
+			(at 0 -11.89 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "42929594-cf88-4238-ab9d-8a40fffc1324")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "Dark gray"
+			(at 0 -10.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "67f51db9-460e-46e9-8365-73032205d24a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "KiPLM_Footprints:BTNK03"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1fe6b943-05f8-49fc-b3fe-6d619e90411f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/1457/ksa_ksl.pdf"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "500a0a78-fc01-4d36-92b4-348e8d0f571b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Switch Cap 8.5 x 3.8 mm"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8ef66af-580f-4f03-8b39-23a6b0482ac6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "IPN" "MEC-0000-0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "310c69ed-d0d8-4296-af62-5b4f76a3a30c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "BTNK0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06fe8bf0-5a81-455f-be2c-687e834440bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "C&K Switches"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1b14bfb2-30f2-48fa-a2d9-2a4d07ec47e8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Symbol" "KiPLM_Symbols:BTNK03"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d46f2ff0-9a94-4348-a72a-32eff9db6cfb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser-PN" "611-BTNK0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "43d0ef41-fa25-4848-a5a5-7781e5430b15")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DigiKey-PN" "BTNK0310-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f09abf2-8a02-4e10-ab18-9c04315bb9ff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "KiPLM_Footprints:BTNK03")
+		(path "/1fc6bdea-3b4f-4014-a681-f1e4122e8877")
+		(sheetname "Root")
+		(sheetfile "front_panel.kicad_sch")
+		(fp_line
+			(start -2.5 2.35)
+			(end -2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "85b0d121-ef79-4610-8981-e5d1d194c1c6")
+		)
+		(fp_line
+			(start 2.5 2.35)
+			(end 2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "96d3c426-9e39-4dea-a8e1-b23168c88f00")
+		)
+		(fp_arc
+			(start -2.5 -2.35)
+			(mid 0 -4.85)
+			(end 2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2d1de512-05bf-4be5-92e2-6a433f20b9c3")
+		)
+		(fp_arc
+			(start 2.5 2.35)
+			(mid 0 4.85)
+			(end -2.5 2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "501eb91f-4634-4d7e-b68b-7cd5c9bae28e")
+		)
+		(fp_line
+			(start -1.95 2.35)
+			(end -1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "bfbe5b65-0e30-4e55-bf8f-4aabaa1ac89b")
+		)
+		(fp_line
+			(start 1.95 2.35)
+			(end 1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "c7943ccb-9a75-4f38-9823-7f703a01cc89")
+		)
+		(fp_arc
+			(start -1.95 -2.35)
+			(mid 0 -4.3)
+			(end 1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "414d34ba-f982-4cad-b33c-b741778d9c2f")
+		)
+		(fp_arc
+			(start 1.95 2.35)
+			(mid 0 4.3)
+			(end -1.95 2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "41ffaf81-9ce6-4aad-8077-328932b72c87")
+		)
+		(fp_line
+			(start -2.9 4.55)
+			(end -2.9 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "bae49bd0-0ba2-489a-be49-a5b744ba32a3")
+		)
+		(fp_line
+			(start -2.6 -4.85)
+			(end 2.6 -4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "41be544e-9228-4828-8c2f-f8ca730255e1")
+		)
+		(fp_line
+			(start 2.6 4.85)
+			(end -2.6 4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "61c32ebb-87bd-4873-b765-0cc68abcc1e5")
+		)
+		(fp_line
+			(start 2.9 -4.55)
+			(end 2.9 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "825bcfa2-df78-4b27-8679-b8b5ff313ec0")
+		)
+		(fp_arc
+			(start -2.9 -4.55)
+			(mid -2.812132 -4.762132)
+			(end -2.6 -4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "fa400435-3945-4ee7-8098-0365371735d4")
+		)
+		(fp_arc
+			(start -2.6 4.85)
+			(mid -2.812132 4.762132)
+			(end -2.9 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "39ab3680-0b4e-444d-99fc-76c1ccb399b1")
+		)
+		(fp_arc
+			(start 2.6 -4.85)
+			(mid 2.812132 -4.762132)
+			(end 2.9 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "eba6b520-451d-4571-abe2-fa6c7c39047a")
+		)
+		(fp_arc
+			(start 2.9 4.55)
+			(mid 2.812132 4.762132)
+			(end 2.6 4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "dbb6ef9c-5269-4aef-98a3-eaa7b2b17ded")
+		)
+		(fp_line
+			(start -2.8 4.55)
+			(end -2.8 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "96f197c9-83ce-4979-b565-d0f2dc8aa904")
+		)
+		(fp_line
+			(start -2.6 -4.75)
+			(end 2.6 -4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "dab62d3d-2477-49ef-8427-d96738f846ad")
+		)
+		(fp_line
+			(start 2.6 4.75)
+			(end -2.6 4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "19765059-c63b-4d6f-b648-a6ff34736566")
+		)
+		(fp_line
+			(start 2.8 -4.55)
+			(end 2.8 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "4d495f9b-d01c-4aa1-8b46-32dd4020c5b1")
+		)
+		(fp_arc
+			(start -2.8 -4.55)
+			(mid -2.741421 -4.691421)
+			(end -2.6 -4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "8fa0d1cb-3aeb-4e9f-b228-37ebe470be39")
+		)
+		(fp_arc
+			(start -2.6 4.75)
+			(mid -2.741421 4.691421)
+			(end -2.8 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "ffaec71f-8b2d-4136-9572-dfa19a7560f8")
+		)
+		(fp_arc
+			(start 2.6 -4.75)
+			(mid 2.741421 -4.691421)
+			(end 2.8 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "304f4736-97af-4cf4-bd25-02fabb600320")
+		)
+		(fp_arc
+			(start 2.8 4.55)
+			(mid 2.741421 4.691421)
+			(end 2.6 4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "7694648c-b878-4ad3-bb49-983c8fedf251")
+		)
+		(fp_line
+			(start 0 0.5)
+			(end 0 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "User.2")
+			(uuid "60315c48-2a78-4808-9b95-b88cae14c22e")
+		)
+		(fp_line
+			(start 0.5 0)
+			(end -0.5 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "User.2")
+			(uuid "38c4079b-22e2-4181-bef5-2ef1e63463b9")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -8.89 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "5d94abe4-1d2e-496f-9a2a-049c0e328c44")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
+			(offset
+				(xyz -2.8 4.75 -2.6)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 90)
+			)
+		)
+	)
+	(footprint "KiPLM_Footprints:BTNK03"
+		(layer "F.Cu")
+		(uuid "47cd410c-9eeb-4284-a539-aea059270dee")
+		(at 122 117)
+		(property "Reference" "M3"
+			(at 0 -11.89 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "47a9456a-766b-42f8-9b23-7c6ad1d1831c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "Dark gray"
+			(at 0 -10.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe91fe43-0fdb-4048-b9f3-6642bea0c250")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "KiPLM_Footprints:BTNK03"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06d73f68-93fe-4e8f-aa31-c8d72218b36e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/1457/ksa_ksl.pdf"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a382039-179e-4090-9891-350871ba9c8b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Switch Cap 8.5 x 3.8 mm"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2894d416-dc33-4739-9858-a4a8bb2df57f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "IPN" "MEC-0000-0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f1680955-d895-4f06-a99c-1229015925ea")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "BTNK0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2e7dfa4c-756f-46f4-b1f7-9139fe6a0559")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "C&K Switches"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b439ff9-8154-48fc-b193-d0b30f3bf715")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Symbol" "KiPLM_Symbols:BTNK03"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e50be961-cf53-4573-8c98-f0c9f60e0482")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser-PN" "611-BTNK0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4cb571b4-ca06-44c1-aa4c-d4a853097310")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DigiKey-PN" "BTNK0310-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2c31138e-9dc8-42fd-bf0d-56a8f51e18bd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "KiPLM_Footprints:BTNK03")
+		(path "/8224ab6b-5695-4cf5-8eb6-c6089f9eaf08")
+		(sheetname "Root")
+		(sheetfile "front_panel.kicad_sch")
+		(fp_line
+			(start -2.5 2.35)
+			(end -2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e288c434-8f8a-4097-8130-03d6831a2767")
+		)
+		(fp_line
+			(start 2.5 2.35)
+			(end 2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e8141e4a-0298-47c6-98b1-39cc8ea0ac55")
+		)
+		(fp_arc
+			(start -2.5 -2.35)
+			(mid 0 -4.85)
+			(end 2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6c400287-64ab-4c0b-b013-25ede8664b73")
+		)
+		(fp_arc
+			(start 2.5 2.35)
+			(mid 0 4.85)
+			(end -2.5 2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "63659384-d41a-4600-afde-6b1897f29eb7")
+		)
+		(fp_line
+			(start -1.95 2.35)
+			(end -1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "151eccd3-1a4f-4f3a-9b28-a1fd7ec29219")
+		)
+		(fp_line
+			(start 1.95 2.35)
+			(end 1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "70360f66-e078-43d0-8883-1286eea68b41")
+		)
+		(fp_arc
+			(start -1.95 -2.35)
+			(mid 0 -4.3)
+			(end 1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "19a21701-0341-47c1-9c2a-722fa3985b94")
+		)
+		(fp_arc
+			(start 1.95 2.35)
+			(mid 0 4.3)
+			(end -1.95 2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "fc2cd8ee-3f85-4b04-aa39-c8ec51fd685d")
+		)
+		(fp_line
+			(start -2.9 4.55)
+			(end -2.9 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "117d34b5-fc5b-49c0-8d1a-cd9304756b12")
+		)
+		(fp_line
+			(start -2.6 -4.85)
+			(end 2.6 -4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "e283fdaf-8864-44d6-b52a-43433464d44b")
+		)
+		(fp_line
+			(start 2.6 4.85)
+			(end -2.6 4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "ff64107b-c71d-42a7-acdc-d2b1b537e737")
+		)
+		(fp_line
+			(start 2.9 -4.55)
+			(end 2.9 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "f82b1c6f-a0ca-4aac-ad90-2085cbf938e2")
+		)
+		(fp_arc
+			(start -2.9 -4.55)
+			(mid -2.812132 -4.762132)
+			(end -2.6 -4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "e1b995f2-e921-4057-ba2e-e05e644c19e5")
+		)
+		(fp_arc
+			(start -2.6 4.85)
+			(mid -2.812132 4.762132)
+			(end -2.9 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "7673f3f3-269e-41ac-b5a8-1008a7b24d55")
+		)
+		(fp_arc
+			(start 2.6 -4.85)
+			(mid 2.812132 -4.762132)
+			(end 2.9 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "95afcad9-3797-4950-bf62-dd4003ea4944")
+		)
+		(fp_arc
+			(start 2.9 4.55)
+			(mid 2.812132 4.762132)
+			(end 2.6 4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "71e70394-86b5-44bf-badb-c8296b147c82")
+		)
+		(fp_line
+			(start -2.8 4.55)
+			(end -2.8 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "3253bec0-20fa-41e6-9195-e352360bd6f3")
+		)
+		(fp_line
+			(start -2.6 -4.75)
+			(end 2.6 -4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "57f22c7c-8033-4ba0-a5e8-e4670e89da5c")
+		)
+		(fp_line
+			(start 2.6 4.75)
+			(end -2.6 4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "9af81452-a6b0-4df5-a3e7-e482b400d3ae")
+		)
+		(fp_line
+			(start 2.8 -4.55)
+			(end 2.8 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "1710e7c7-fa1a-49c2-8e51-812417675a77")
+		)
+		(fp_arc
+			(start -2.8 -4.55)
+			(mid -2.741421 -4.691421)
+			(end -2.6 -4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "4fee3cb6-d191-4677-9669-8add4ccc15f0")
+		)
+		(fp_arc
+			(start -2.6 4.75)
+			(mid -2.741421 4.691421)
+			(end -2.8 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "054c44bb-5eb7-4d7f-9ef1-c016b113d221")
+		)
+		(fp_arc
+			(start 2.6 -4.75)
+			(mid 2.741421 -4.691421)
+			(end 2.8 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "8e6e1fdd-f5b9-4d86-bcaa-f4c8075a687c")
+		)
+		(fp_arc
+			(start 2.8 4.55)
+			(mid 2.741421 4.691421)
+			(end 2.6 4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "1a81d199-cb0f-44eb-9a5d-33723148079d")
+		)
+		(fp_line
+			(start 0 0.5)
+			(end 0 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "User.2")
+			(uuid "08b45a76-d005-422a-9108-58b19ee5a3ce")
+		)
+		(fp_line
+			(start 0.5 0)
+			(end -0.5 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "User.2")
+			(uuid "e9833ffe-7e9b-4137-a3c3-3b4f938fd406")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -8.89 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "887a2862-e4d4-4b66-b030-baf515d1ca38")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
+			(offset
+				(xyz -2.8 4.75 -2.6)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 90)
+			)
+		)
+	)
+	(footprint "KiPLM_Footprints:515-130X-XXXXF"
+		(layer "F.Cu")
+		(uuid "918b47fa-8bba-4e60-ab0c-596199e23c99")
+		(at 103 107.5)
+		(property "Reference" "LP2"
+			(at 0 -0.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b118d2f8-6e4e-420d-a969-a1dd0e58f012")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0e73623c-004c-4e56-af75-dce430cb4fba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "KiPLM_Footprints:515-130X-XXXXF"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cec35f89-dbb2-4d0a-bebb-bcd646f00356")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.it/datasheet/2/109/Dialight_CBI_data_515_OptoVPM_3mm-3082423.pdf"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb57dc82-4922-4c59-a298-62e68a18af5e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "LED Light Pipes PMVLPCONVEX LTPIPE 122 X 125 LG"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1ba6328-6263-4b7a-8739-3b50b8ae5565")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "515-1302-0125F"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "84ec897e-61a7-42ef-af4d-e5442309713a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "IPN" "MEC-0004-2012"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "76520aa2-f649-4c47-82c0-fc840879615a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Dialight"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5501bdac-dd6b-4adf-a3c0-df6b86a78f22")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Symbol" "KiPLM_Symbols:LPC_Light_Pipe_Convex"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5f4dde88-f649-4abf-92ee-e4c12c48b261")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser-PN" "645-515-1302-0125F"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b8f008b-244c-4729-8a54-337e99bdd80b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DigiKey-PN" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "715419a4-f8dd-414d-84c9-cdabc8bc3028")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "KiPLM_Footprints:515-130X-XXXXF")
+		(path "/51a85e24-e9d9-4bff-8cb5-b1077c322dda")
+		(sheetname "Root")
+		(sheetfile "front_panel.kicad_sch")
+		(fp_circle
+			(center 0 0)
+			(end 1.65 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill none)
+			(layer "Cmts.User")
+			(uuid "c4f17b70-4f20-4968-9c98-0cd531da1392")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.65 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill none)
+			(layer "F.CrtYd")
+			(uuid "4a86b928-e5b9-4a44-a35b-1686e2d44fbd")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "6b5460ce-8622-485d-9bb0-1838ba0c505f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 2.92 2.92)
+			(drill 2.92)
+			(layers "F&B.Cu" "*.Mask")
+			(uuid "cdce2219-087f-473e-9923-635badb11b30")
+		)
+		(model "${KIPLM_DIR}/kicad_libs/3d_models/515-1302-0125F.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 90 0 0)
+			)
+		)
+	)
+	(footprint "KiPLM_Footprints:BTNK03"
+		(layer "F.Cu")
+		(uuid "9e729d66-d201-49e2-9b5c-39f39121f525")
+		(at 112.5 117)
+		(property "Reference" "M2"
+			(at 0 -11.89 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "259dc3e9-8af1-4f73-a5f6-579420ecfe0a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "Dark gray"
+			(at 0 -10.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dd6fbae1-4510-40bc-8a16-f7bd743d8675")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "KiPLM_Footprints:BTNK03"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "179cce85-fc0c-4512-9339-e77f321ab6f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/1457/ksa_ksl.pdf"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c1112e7-eb37-423a-a91e-d6626cad08b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Switch Cap 8.5 x 3.8 mm"
+			(at 0 -11.39 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "81f5e09b-7558-4762-bfb0-920f194cacd7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "IPN" "MEC-0000-0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4e308fe9-151a-460f-9e71-e401017e9199")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "BTNK0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "da63bfec-2c2c-4a8c-a493-bfcefbf5961d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "C&K Switches"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7facd11f-0ec9-4ac6-9c49-5d3957ee9cf9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Symbol" "KiPLM_Symbols:BTNK03"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "92494caf-e557-4186-94ee-2c9f12bac997")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser-PN" "611-BTNK0310"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8cb5f75-bf66-4d08-8e14-575b5e4c7241")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DigiKey-PN" "BTNK0310-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5bc96d48-d329-4a59-8368-bcbd48b14f95")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "KiPLM_Footprints:BTNK03")
+		(path "/93d4f74f-6bc0-429a-8e6a-a343d4856fc0")
+		(sheetname "Root")
+		(sheetfile "front_panel.kicad_sch")
+		(fp_line
+			(start -2.5 2.35)
+			(end -2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9c80ea20-e989-4224-a7d7-74f571c25e68")
+		)
+		(fp_line
+			(start 2.5 2.35)
+			(end 2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7740c424-e9ac-4912-b2da-defa65a80789")
+		)
+		(fp_arc
+			(start -2.5 -2.35)
+			(mid 0 -4.85)
+			(end 2.5 -2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "410500d5-72d0-4c21-89b3-dce7c3b07765")
+		)
+		(fp_arc
+			(start 2.5 2.35)
+			(mid 0 4.85)
+			(end -2.5 2.35)
+			(stroke
+				(width 0.5)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "02d688f8-1284-4524-95b1-005e6de54889")
+		)
+		(fp_line
+			(start -1.95 2.35)
+			(end -1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "54a85341-d423-4134-b7d9-a03cea225ad8")
+		)
+		(fp_line
+			(start 1.95 2.35)
+			(end 1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "c26ea114-23b7-44cb-b653-23094e533462")
+		)
+		(fp_arc
+			(start -1.95 -2.35)
+			(mid 0 -4.3)
+			(end 1.95 -2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "f98f452b-22e6-4169-aa70-188f9a39446e")
+		)
+		(fp_arc
+			(start 1.95 2.35)
+			(mid 0 4.3)
+			(end -1.95 2.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "2281df17-884c-46e3-a08d-4393ec1856d0")
+		)
+		(fp_line
+			(start -2.9 4.55)
+			(end -2.9 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "e2f5d4fb-eff2-4f54-a2ad-a74d24e9a702")
+		)
+		(fp_line
+			(start -2.6 -4.85)
+			(end 2.6 -4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "84b467f6-f7df-44aa-9b40-020c71d9d249")
+		)
+		(fp_line
+			(start 2.6 4.85)
+			(end -2.6 4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "9a1891d7-c0e8-48c2-9a3f-67341aa7011b")
+		)
+		(fp_line
+			(start 2.9 -4.55)
+			(end 2.9 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "abbd324f-4cbc-4922-b137-1be211675243")
+		)
+		(fp_arc
+			(start -2.9 -4.55)
+			(mid -2.812132 -4.762132)
+			(end -2.6 -4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "710beee4-2633-4c9d-a0c3-ea8958f9ef08")
+		)
+		(fp_arc
+			(start -2.6 4.85)
+			(mid -2.812132 4.762132)
+			(end -2.9 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "e42c6eb3-81de-4cee-bfe6-2bf77e600efe")
+		)
+		(fp_arc
+			(start 2.6 -4.85)
+			(mid 2.812132 -4.762132)
+			(end 2.9 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "06e1ab63-0099-4fe6-ace7-651234c6f2bb")
+		)
+		(fp_arc
+			(start 2.9 4.55)
+			(mid 2.812132 4.762132)
+			(end 2.6 4.85)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "99e6cd31-d941-4131-b82f-6d301b498963")
+		)
+		(fp_line
+			(start -2.8 4.55)
+			(end -2.8 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "0383c974-ebfc-4be0-891a-cf120c0b63f4")
+		)
+		(fp_line
+			(start -2.6 -4.75)
+			(end 2.6 -4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "48bb7744-9840-43b0-ae6f-1934e1d16be8")
+		)
+		(fp_line
+			(start 2.6 4.75)
+			(end -2.6 4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "55539d03-39ae-44f0-8fba-159ae81360f4")
+		)
+		(fp_line
+			(start 2.8 -4.55)
+			(end 2.8 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "c05ae03d-dd02-478e-bb0a-08d7321e09d0")
+		)
+		(fp_arc
+			(start -2.8 -4.55)
+			(mid -2.741421 -4.691421)
+			(end -2.6 -4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "93608d7b-7fa8-4ebc-b6fc-026a2fc98c14")
+		)
+		(fp_arc
+			(start -2.6 4.75)
+			(mid -2.741421 4.691421)
+			(end -2.8 4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "f75bd688-0b25-4cd0-b13b-3a5d09f33601")
+		)
+		(fp_arc
+			(start 2.6 -4.75)
+			(mid 2.741421 -4.691421)
+			(end 2.8 -4.55)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "36545bd3-714a-4a3b-ab61-bd270990199d")
+		)
+		(fp_arc
+			(start 2.8 4.55)
+			(mid 2.741421 4.691421)
+			(end 2.6 4.75)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.Fab")
+			(uuid "06b52e58-f089-48f3-83d2-101285ad11d8")
+		)
+		(fp_line
+			(start 0 0.5)
+			(end 0 -0.5)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "User.2")
+			(uuid "82bcd190-fbf1-455a-afad-375620e5669e")
+		)
+		(fp_line
+			(start 0.5 0)
+			(end -0.5 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "User.2")
+			(uuid "e234a3e9-180c-42af-ae6e-62ce37b8d938")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -8.89 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "10f1fc18-1996-4183-95ed-7dfa7f2a61c3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
+			(offset
+				(xyz -2.8 4.75 -2.6)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 90)
+			)
+		)
+	)
+	(footprint "KiPLM_Footprints:515-130X-XXXXF"
+		(layer "F.Cu")
+		(uuid "f0464723-490d-46ce-8f91-c4ffaf9c9283")
+		(at 103 103)
+		(property "Reference" "LP1"
+			(at 0 -0.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b1f443d1-9b1b-4a1e-a178-5c407e238b58")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f7df2d3-7fd3-4651-aede-462d8956e03c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "KiPLM_Footprints:515-130X-XXXXF"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06277760-cf95-4875-979d-fa565d760c24")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.it/datasheet/2/109/Dialight_CBI_data_515_OptoVPM_3mm-3082423.pdf"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6e9a1a5-31fc-412d-b03e-a7a1585b2fb2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "LED Light Pipes PMVLPCONVEX LTPIPE 122 X 125 LG"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "de572f10-f114-4258-a8c7-dc6d6ea4896e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "515-1302-0125F"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dbbbdc34-d08c-4943-9a68-818ea57ac450")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "IPN" "MEC-0004-2012"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b52a9756-090d-42b1-88dd-c20e1807579a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Dialight"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c5f10ee-a471-4ca0-b345-807b11e3e1ed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Symbol" "KiPLM_Symbols:LPC_Light_Pipe_Convex"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "14fc89f6-4655-4b6f-9475-7daeb6c20809")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser-PN" "645-515-1302-0125F"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e085a4b8-a6ab-4387-b0b7-f33fe7ed5061")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "DigiKey-PN" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3cece20a-2fc4-439e-9245-ae2e2c3acae6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "KiPLM_Footprints:515-130X-XXXXF")
+		(path "/790039ef-d307-4fc1-bab6-a4d29e06df19")
+		(sheetname "Root")
+		(sheetfile "front_panel.kicad_sch")
+		(fp_circle
+			(center 0 0)
+			(end 1.65 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill none)
+			(layer "Cmts.User")
+			(uuid "3fc3d653-48bc-49c0-ac48-5f0f37d486cf")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.65 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill none)
+			(layer "F.CrtYd")
+			(uuid "5286234f-c76c-4a64-9694-0b308be52f67")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "9720c9ab-9f0d-4583-82b3-042725abfe25")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 2.92 2.92)
+			(drill 2.92)
+			(layers "F&B.Cu" "*.Mask")
+			(uuid "41d74daa-34a0-4c66-a77b-ba1521b4f7a3")
+		)
+		(model "${KIPLM_DIR}/kicad_libs/3d_models/515-1302-0125F.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 90 0 0)
+			)
+		)
+	)
+	(footprint "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT"
+		(layer "B.Cu")
+		(uuid "4e391d71-e0a1-41b5-addd-e8d897d02ec4")
+		(at 106 111.5 180)
+		(property "Reference" "M7"
+			(at 0 0.5 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "22e6cfbe-48e3-49c5-ba44-ab8e9cab79a5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "~"
+			(at 0 -1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c2b48074-d54a-48ed-80a6-44bc5833dfbf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5dcd8de4-70c3-4d87-b748-f4cc71244120")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "https://cnckitchen.store/products/heat-set-insert-m2-x-3-100-pieces"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "99703925-6675-403b-af6f-e121fd56e6aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Threaded insert for 3D printing, brass, M2, L=3.0 mm"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8187ea55-8e5b-46a4-b0d6-654c823ef8ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "IPN" "MEC-0005-30M2"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ad939f72-515c-4b30-bfaf-9fd477b57879")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MPN" "M2_3.0"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "94592d18-ee82-40eb-9d51-3ee3858766f4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer" "CNCKitchen"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6e365906-e5dd-4340-bb6c-fb8c12a13e93")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Symbol" "KiPLM_Symbols:Threaded_Insert"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "15545e6d-d0da-4272-9094-5a470e21ad67")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser-PN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c168fdd7-5ba8-4a38-a4d7-021526eb9492")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "DigiKey-PN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5433f7ee-fa3d-4d08-ac70-ca45781a56fb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT")
+		(path "/c0864c42-60d0-445e-966f-c6677d6207e3")
+		(sheetname "Root")
+		(sheetfile "front_panel.kicad_sch")
+		(fp_text user "${REFERENCE}"
+			(at 0 -2.5 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "6221f6d2-3bd7-42a2-bd19-3472a1d8af40")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0 180)
+			(size 4 4)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(uuid "db417771-8efc-4eb2-b864-b3cab3fc78f0")
+		)
+		(model "${KIPLM_DIR}/kicad_libs/3d_models/Threaded_Insert_M2_3.0mm.step"
+			(offset
+				(xyz 0 0 3)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+	)
+	(footprint "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT"
+		(layer "B.Cu")
+		(uuid "ce852e40-3ce0-4225-a1fc-a273a500dcad")
+		(at 122.5 141.5 180)
+		(property "Reference" "M10"
+			(at 0 0.5 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "979f3b31-d4ff-4c05-a1a2-0a93a8e3686b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "~"
+			(at 0 -1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a9ec2e86-04c8-4a56-9ed3-ae0b95465bfb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7d82d34e-93ac-446c-a218-9346e982651d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "https://cnckitchen.store/products/heat-set-insert-m2-x-3-100-pieces"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8fa980a0-a1eb-4458-bb75-341b8b3a1083")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Threaded insert for 3D printing, brass, M2, L=3.0 mm"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "94fcf7dd-9e93-41c5-b73c-77a19a1d0bb4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "IPN" "MEC-0005-30M2"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7dbac921-2cd7-4e6a-a46e-33463b4bd2e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MPN" "M2_3.0"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e4e896e5-b5fa-4d3e-9cd9-3a7dae013df1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer" "CNCKitchen"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2c508e25-fe7b-4037-8b1f-538ce4b95545")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Symbol" "KiPLM_Symbols:Threaded_Insert"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8c28d321-2a90-41b9-849e-88da80352e96")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser-PN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b02f11e6-ddac-4da9-a8e2-ef518b54b900")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "DigiKey-PN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "430c5e5d-1fcf-4a93-99fb-3e70b32216ca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT")
+		(path "/63bba46d-fbda-4ff0-b3c2-424cf1e4153c")
+		(sheetname "Root")
+		(sheetfile "front_panel.kicad_sch")
+		(fp_text user "${REFERENCE}"
+			(at 0 -2.5 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "3cf8d7e2-3fa3-48e1-9ea5-4122550ceda3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0 180)
+			(size 4 4)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(uuid "d2d3c38e-df26-4d60-bfa9-5ee1f695a292")
+		)
+		(model "${KIPLM_DIR}/kicad_libs/3d_models/Threaded_Insert_M2_3.0mm.step"
+			(offset
+				(xyz 0 0 3)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+	)
+	(footprint "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT"
+		(layer "B.Cu")
+		(uuid "f711cd03-b7bd-4646-9480-55eb887bf3ce")
+		(at 102.5 141.5 180)
+		(property "Reference" "M9"
+			(at 0 0.5 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "f02da1c9-77cb-46f3-b4bc-e91d98d6c915")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "~"
+			(at 0 -1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7991b035-5d75-401f-ae64-d035a76b1899")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "385c414e-1714-40dc-94c7-e08bd3a63462")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "https://cnckitchen.store/products/heat-set-insert-m2-x-3-100-pieces"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a1335f89-092f-451c-b686-d57d6b5e4829")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Threaded insert for 3D printing, brass, M2, L=3.0 mm"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "139fa250-cf77-401d-9c66-488fb9130d91")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "IPN" "MEC-0005-30M2"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "849fed70-4896-4f61-a0dd-10d83d7f9122")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MPN" "M2_3.0"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "33076e33-bd38-45e1-ac3c-43983ddd3a54")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer" "CNCKitchen"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0204e7c9-a81d-4619-a9c2-8b9fedcd27e5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Symbol" "KiPLM_Symbols:Threaded_Insert"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "95498ff0-24a2-4fcd-bec2-2cf4ee79c306")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser-PN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b79e1f1c-137d-4c94-8e8f-d22e68713557")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "DigiKey-PN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e12ea4b5-1035-4773-8453-5b9a9f558c87")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT")
+		(path "/00b7914d-408a-4179-88c4-65898a39fce3")
+		(sheetname "Root")
+		(sheetfile "front_panel.kicad_sch")
+		(fp_text user "${REFERENCE}"
+			(at 0 -2.5 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "cf1f50bf-5581-4093-a041-6c698c32d424")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0 180)
+			(size 4 4)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(uuid "771c5f85-1f1a-4427-9f0e-f51e2244e53e")
+		)
+		(model "${KIPLM_DIR}/kicad_libs/3d_models/Threaded_Insert_M2_3.0mm.step"
+			(offset
+				(xyz 0 0 3)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+	)
+	(footprint "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT"
+		(layer "B.Cu")
+		(uuid "f9039ab3-4850-4e1b-9dfe-027b784496dd")
+		(at 122.5 123 180)
+		(property "Reference" "M8"
+			(at 0 0.5 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "16a765e0-5c43-4211-9bcf-a92c616e153b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "~"
+			(at 0 -1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "00836fa9-1d2a-49c4-925b-b117922e0225")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Footprint" "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "860a2af0-5282-4361-ac03-d4ff7d903017")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "https://cnckitchen.store/products/heat-set-insert-m2-x-3-100-pieces"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "66db86d2-5cd8-4de9-bcb5-71912bd8dd77")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "Threaded insert for 3D printing, brass, M2, L=3.0 mm"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c963bbd9-ec6e-41b7-a765-8502ecb55ef2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "IPN" "MEC-0005-30M2"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2135c629-3010-4652-9f0e-f60cd478b144")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MPN" "M2_3.0"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "cc09549a-7e85-47f6-9757-b98ab3847dab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer" "CNCKitchen"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "379543cc-9ff1-461e-9339-16fdf1153b7a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Symbol" "KiPLM_Symbols:Threaded_Insert"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d7063987-7975-4b19-97c4-f3ddcc30d324")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser-PN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "58b49669-a963-4c2b-acaa-156bc16ee2ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "DigiKey-PN" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ff9ac989-3403-4fd5-9475-b40e79d79e5d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT")
+		(path "/5d6f48b8-7cb5-4124-a071-14cbc9566eb3")
+		(sheetname "Root")
+		(sheetfile "front_panel.kicad_sch")
+		(fp_text user "${REFERENCE}"
+			(at 0 -2.5 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "9a4a11ad-b363-4eea-b46f-dd9763e20310")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0 180)
+			(size 4 4)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(uuid "1991e781-f1b7-4ecf-bb85-a0d609e0a976")
+		)
+		(model "${KIPLM_DIR}/kicad_libs/3d_models/Threaded_Insert_M2_3.0mm.step"
+			(offset
+				(xyz 0 0 3)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 180 0)
+			)
+		)
+	)
+	(gr_arc
+		(start 101 144)
+		(mid 100.292893 143.707107)
+		(end 100 143)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "0f0dcda1-31be-4cd3-b538-38b4515a706c")
+	)
+	(gr_arc
+		(start 100 101)
+		(mid 100.292893 100.292893)
+		(end 101 100)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "1669083f-8ad4-4639-9da6-a52f96cffd77")
+	)
+	(gr_line
+		(start 124 144)
+		(end 101 144)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "389916b2-0789-41cd-8a47-b6769109e5f2")
+	)
+	(gr_line
+		(start 125 101)
+		(end 125 143)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "46e1851d-d947-482c-b478-b8023f42c341")
+	)
+	(gr_line
+		(start 100 143)
+		(end 100 101)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "4f9b97c2-6282-4903-a1b5-30f6932bb5db")
+	)
+	(gr_line
+		(start 101 100)
+		(end 124 100)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "5bb5c01f-5462-49dd-92a1-10dcd40076bb")
+	)
+	(gr_arc
+		(start 124 100)
+		(mid 124.707107 100.292893)
+		(end 125 101)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "5d4bf4fd-73cd-4684-aff9-58672c5c0a61")
+	)
+	(gr_arc
+		(start 125 143)
+		(mid 124.707107 143.707107)
+		(end 124 144)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "6e486f76-ce02-4f93-a895-6cbc3b95e72f")
+	)
+	(gr_text "FEEDBACK"
+		(at 105.8 108.7035 0)
+		(layer "F.SilkS")
+		(uuid "0af04fdf-69e3-4d49-bcb7-11416d0ed968")
+		(effects
+			(font
+				(size 1.8 1.8)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "2"
+		(at 111.65 111.6 0)
+		(layer "F.SilkS")
+		(uuid "22f2a474-b08f-43e6-acf8-fc79d534ca24")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "5"
+		(at 111.65 136.3 0)
+		(layer "F.SilkS")
+		(uuid "337dfbd8-5792-4cd7-a8fd-49b518a280a1")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "6"
+		(at 121.15 136.3 0)
+		(layer "F.SilkS")
+		(uuid "3b2c275e-c6a3-431a-b3bf-944a2e21398d")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "COMMS"
+		(at 105.8 104.2035 0)
+		(layer "F.SilkS")
+		(uuid "5742e031-f51d-42e6-8025-ae8412336768")
+		(effects
+			(font
+				(size 1.8 1.8)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "3"
+		(at 121.15 111.6 0)
+		(layer "F.SilkS")
+		(uuid "58c10ca7-e147-4a86-9e17-20985448d2a1")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "1"
+		(at 102.15 111.6 0)
+		(layer "F.SilkS")
+		(uuid "b110bffd-3fd8-4070-90fe-4248600cb639")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "4"
+		(at 102.1 136.3 0)
+		(layer "F.SilkS")
+		(uuid "d6ff53c7-a6a3-4bd1-899a-f8132fb6b687")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+)
