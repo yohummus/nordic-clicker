@@ -1,0 +1,5 @@
+board:
+  name: nordic_clicker
+  vendor: yohummus
+  socs:
+    - name: nrf52840

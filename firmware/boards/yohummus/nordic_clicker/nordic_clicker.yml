@@ -1,0 +1,11 @@
+identifier: nordic_clicker/nrf52840
+name: Nordic Clicker
+vendor: yohummus
+type: mcu
+arch: arm
+ram: 256
+flash: 1024
+toolchain:
+  - zephyr
+supported:
+  - gpio

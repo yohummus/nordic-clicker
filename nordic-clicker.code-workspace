@@ -21,7 +21,9 @@
       "**/#*": true,
       "**/~*": true
     },
-    "nrf-connect.applications": [],
+    "nrf-connect.applications": [
+      "${workspaceFolder}/firmware/apps/hardware_test"
+    ],
     "nrf-connect.boardRoots": ["${workspaceFolder}/firmware/boards"]
   }
 }
