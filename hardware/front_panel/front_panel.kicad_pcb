@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(general
-		(thickness 1.6)
+		(thickness 1)
 		(legacy_teardrops no)
 	)
 	(paper "A4")
@@ -39,6 +39,49 @@
 		(58 "User.9" user)
 	)
 	(setup
+		(stackup
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+				(color "White")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(color "Black")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 1"
+				(type "core")
+				(thickness 0.91)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(color "Black")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+				(color "White")
+			)
+			(copper_finish "None")
+			(dielectric_constraints no)
+		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(pcbplotparams
@@ -517,7 +560,7 @@
 		)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
 			(offset
-				(xyz -2.8 4.75 -2.6)
+				(xyz -2.8 4.75 -2)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -964,7 +1007,7 @@
 		)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
 			(offset
-				(xyz -2.8 4.75 -2.6)
+				(xyz -2.8 4.75 -2)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -1411,7 +1454,7 @@
 		)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
 			(offset
-				(xyz -2.8 4.75 -2.6)
+				(xyz -2.8 4.75 -2)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -1858,7 +1901,7 @@
 		)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
 			(offset
-				(xyz -2.8 4.75 -2.6)
+				(xyz -2.8 4.75 -2)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -2305,7 +2348,7 @@
 		)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
 			(offset
-				(xyz -2.8 4.75 -2.6)
+				(xyz -2.8 4.75 -2)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -2956,7 +2999,7 @@
 		)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
 			(offset
-				(xyz -2.8 4.75 -2.6)
+				(xyz -2.8 4.75 -2)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -3173,7 +3216,7 @@
 	(footprint "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT"
 		(layer "B.Cu")
 		(uuid "4e391d71-e0a1-41b5-addd-e8d897d02ec4")
-		(at 106 111.5 180)
+		(at 102.5 98.5 180)
 		(property "Reference" "M7"
 			(at 0 0.5 0)
 			(unlocked yes)
@@ -3366,7 +3409,7 @@
 	(footprint "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT"
 		(layer "B.Cu")
 		(uuid "ce852e40-3ce0-4225-a1fc-a273a500dcad")
-		(at 122.5 141.5 180)
+		(at 122.5 142 180)
 		(property "Reference" "M10"
 			(at 0 0.5 0)
 			(unlocked yes)
@@ -3559,7 +3602,7 @@
 	(footprint "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT"
 		(layer "B.Cu")
 		(uuid "f711cd03-b7bd-4646-9480-55eb887bf3ce")
-		(at 102.5 141.5 180)
+		(at 102.5 142 180)
 		(property "Reference" "M9"
 			(at 0 0.5 0)
 			(unlocked yes)
@@ -3752,7 +3795,7 @@
 	(footprint "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT"
 		(layer "B.Cu")
 		(uuid "f9039ab3-4850-4e1b-9dfe-027b784496dd")
-		(at 122.5 123 180)
+		(at 122.5 98.5 180)
 		(property "Reference" "M8"
 			(at 0 0.5 0)
 			(unlocked yes)
@@ -3942,92 +3985,105 @@
 			)
 		)
 	)
-	(gr_arc
-		(start 101 144)
-		(mid 100.292893 143.707107)
-		(end 100 143)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "0f0dcda1-31be-4cd3-b538-38b4515a706c")
-	)
-	(gr_arc
-		(start 100 101)
-		(mid 100.292893 100.292893)
-		(end 101 100)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "1669083f-8ad4-4639-9da6-a52f96cffd77")
-	)
 	(gr_line
-		(start 124 144)
-		(end 101 144)
+		(start 100.5 95)
+		(end 124.5 95)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "389916b2-0789-41cd-8a47-b6769109e5f2")
-	)
-	(gr_line
-		(start 125 101)
-		(end 125 143)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "46e1851d-d947-482c-b478-b8023f42c341")
-	)
-	(gr_line
-		(start 100 143)
-		(end 100 101)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "4f9b97c2-6282-4903-a1b5-30f6932bb5db")
-	)
-	(gr_line
-		(start 101 100)
-		(end 124 100)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "5bb5c01f-5462-49dd-92a1-10dcd40076bb")
+		(uuid "0f6c8acc-6ad4-4d82-9346-ea499ca3f380")
 	)
 	(gr_arc
-		(start 124 100)
-		(mid 124.707107 100.292893)
-		(end 125 101)
+		(start 124.5 95)
+		(mid 125.914214 95.585786)
+		(end 126.5 97)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "5d4bf4fd-73cd-4684-aff9-58672c5c0a61")
+		(uuid "15fd8d49-94bf-4b6a-a213-6c3e536f2366")
+	)
+	(gr_line
+		(start 98.5 143.5)
+		(end 98.5 97)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "22e07987-277b-48e8-8151-2fc9c94eb316")
 	)
 	(gr_arc
-		(start 125 143)
-		(mid 124.707107 143.707107)
-		(end 124 144)
+		(start 98.5 97)
+		(mid 99.085786 95.585786)
+		(end 100.5 95)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "6e486f76-ce02-4f93-a895-6cbc3b95e72f")
+		(uuid "6b121606-8edd-4de7-9320-0d5d2a946ae9")
+	)
+	(gr_line
+		(start 124.5 145.5)
+		(end 100.5 145.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "8788b435-4f45-4afd-bd65-28c6c2983a77")
+	)
+	(gr_line
+		(start 126.5 97)
+		(end 126.5 143.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "9e8d5b80-0b07-4c7c-a558-d922347fbe0b")
+	)
+	(gr_arc
+		(start 126.5 143.5)
+		(mid 125.914214 144.914214)
+		(end 124.5 145.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "bb70e781-f2ac-476a-afbb-bf9513aee8fa")
+	)
+	(gr_arc
+		(start 100.5 145.5)
+		(mid 99.085786 144.914214)
+		(end 98.5 143.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "d37d1928-d540-4382-ba4e-542244bc6d2b")
+	)
+	(gr_text "Nordic Clicker\nfront panel\nRev: A"
+		(at 119.2 143.9 0)
+		(layer "B.SilkS" knockout)
+		(uuid "e832d8eb-48e8-4191-b694-3b4863b94480")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
 	)
 	(gr_text "FEEDBACK"
-		(at 105.8 108.7035 0)
+		(at 106.1 108.7035 0)
 		(layer "F.SilkS")
 		(uuid "0af04fdf-69e3-4d49-bcb7-11416d0ed968")
 		(effects
@@ -4079,7 +4135,7 @@
 		)
 	)
 	(gr_text "COMMS"
-		(at 105.8 104.2035 0)
+		(at 106.1 104.2035 0)
 		(layer "F.SilkS")
 		(uuid "5742e031-f51d-42e6-8025-ae8412336768")
 		(effects

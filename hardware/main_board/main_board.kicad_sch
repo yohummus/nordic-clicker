@@ -10,108 +10,6 @@
 		(rev "A")
 	)
 	(lib_symbols
-		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.762) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "KiPLM:AUD/AUD-0000-1109"
 			(pin_names
 				(offset 0) hide)
@@ -315,7 +213,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "8pF"
 				(at 0.254 -2.032 0)
 				(effects
 					(font
@@ -549,7 +447,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "22uF"
 				(at 0.254 -2.032 0)
 				(effects
 					(font
@@ -783,7 +681,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "100uF"
 				(at 0.254 -2.032 0)
 				(effects
 					(font
@@ -1664,7 +1562,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "1uH"
 				(at 0.762 -1.016 0)
 				(effects
 					(font
@@ -2406,7 +2304,7 @@
 					)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "32.768kHz"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -2705,7 +2603,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser-PN" ""
+			(property "Mouser-PN" "712-BAT-HLD-001"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2901,7 +2799,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser-PN" ""
+			(property "Mouser-PN" "534-2991"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2999,7 +2897,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Resistor"
+			(property "Value" "10kΩ"
 				(at 0.762 -1.016 0)
 				(effects
 					(font
@@ -3213,6 +3111,236 @@
 				)
 			)
 		)
+		(symbol "KiPLM:RES/RES-0000-0105"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "1MΩ"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/doc?28773"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Thick Film Resistors - SMD 1/10Watt 1Mohms 1% Commercial Use"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Resistance" "1MΩ"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "IPN" "RES-0000-0105"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "CRCW06031M00FKEAC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Vishay"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Symbol" "KiPLM_Symbols:Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Voltage" "75V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Power" "100mW"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Tolerance" "1%"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "0603"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Temperature Coefficient" "100PPM/°C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser-PN" "71-CRCW06031M00FKEAC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "DigiKey-PN" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Resistor_SMD:R_0603_1608Metric"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RES/RES-0000-0105_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RES/RES-0000-0105_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "KiPLM:RES/RES-0000-0220"
 			(pin_numbers hide)
 			(pin_names
@@ -3229,7 +3357,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Resistor"
+			(property "Value" "22Ω"
 				(at 0.762 -1.016 0)
 				(effects
 					(font
@@ -5887,7 +6015,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "PTS810SJG250SMTR LFS"
 				(at 0 -1.524 0)
 				(effects
 					(font
@@ -6429,6 +6557,109 @@
 				)
 			)
 		)
+		(symbol "KiPLM_Symbols:Test_Point"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Test_Point"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Test_Point_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Test_Point_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Mechanical:MountingHole"
 			(pin_names
 				(offset 1.016)
@@ -6747,6 +6978,12 @@
 		(uuid "19762703-5b83-4c7c-99e5-5f9492d1678d")
 	)
 	(junction
+		(at 54.61 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f49fcc7-aba7-424c-a3c4-0392deee7681")
+	)
+	(junction
 		(at 255.27 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6777,16 +7014,16 @@
 		(uuid "3db0189a-1e8a-443e-bf20-2097c7f8afab")
 	)
 	(junction
+		(at 72.39 180.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f89de13-aa3d-4a56-b121-a4ee8f1fbe07")
+	)
+	(junction
 		(at 46.99 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "417ae25a-8cef-4e59-9636-4df76874a4ae")
-	)
-	(junction
-		(at 73.66 160.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "46eb494f-1e19-4bb8-b288-e63da6c7fbf8")
 	)
 	(junction
 		(at 114.3 170.18)
@@ -6909,12 +7146,6 @@
 		(uuid "8c3683e3-7da6-4810-b7d2-76a365c49916")
 	)
 	(junction
-		(at 55.88 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8d4887ae-8591-4d3b-8ebc-6a713ded9f05")
-	)
-	(junction
 		(at 130.81 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6955,6 +7186,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a36e4122-feda-4487-a52e-eea39bfc62bf")
+	)
+	(junction
+		(at 54.61 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a3e97697-e9d2-49cb-b4c4-adede7c179df")
 	)
 	(junction
 		(at 241.3 133.35)
@@ -7047,16 +7284,16 @@
 		(uuid "d7aa7ee7-d30a-4b70-ba5c-5742a80ac45d")
 	)
 	(junction
+		(at 72.39 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db4ad05d-7a19-46e5-bd01-34a09d17bb91")
+	)
+	(junction
 		(at 71.12 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e3bdee2a-a967-4602-9c3a-fd2399317599")
-	)
-	(junction
-		(at 55.88 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ea17378b-25cc-4f69-bc3e-618cfc5114da")
 	)
 	(junction
 		(at 20.32 180.34)
@@ -7230,16 +7467,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 149.86) (xy 71.12 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1adfce70-0170-4610-be72-7fe445536a59")
-	)
-	(wire
-		(pts
 			(xy 53.34 80.01) (xy 60.96 80.01)
 		)
 		(stroke
@@ -7380,7 +7607,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 170.18) (xy 55.88 170.18)
+			(xy 46.99 170.18) (xy 54.61 170.18)
 		)
 		(stroke
 			(width 0)
@@ -7440,6 +7667,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 170.18) (xy 82.55 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c14a59c-714d-46ac-b717-69fa5014f071")
+	)
+	(wire
+		(pts
 			(xy 114.3 180.34) (xy 105.41 180.34)
 		)
 		(stroke
@@ -7487,6 +7724,16 @@
 			(type default)
 		)
 		(uuid "4aad3184-29b4-4077-a234-71b4797f0995")
+	)
+	(wire
+		(pts
+			(xy 54.61 149.86) (xy 71.12 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b48cd2d-6b62-48d0-953d-6f53d08cd4ab")
 	)
 	(wire
 		(pts
@@ -7740,6 +7987,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 160.02) (xy 72.39 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c80409c-87b5-4c1c-b133-41050e8c94d4")
+	)
+	(wire
+		(pts
 			(xy 40.64 149.86) (xy 40.64 154.94)
 		)
 		(stroke
@@ -7880,7 +8137,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 180.34) (xy 80.01 180.34)
+			(xy 20.32 180.34) (xy 72.39 180.34)
 		)
 		(stroke
 			(width 0)
@@ -8220,7 +8477,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 160.02) (xy 55.88 170.18)
+			(xy 54.61 160.02) (xy 54.61 170.18)
 		)
 		(stroke
 			(width 0)
@@ -8320,7 +8577,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 149.86) (xy 55.88 149.86)
+			(xy 40.64 149.86) (xy 54.61 149.86)
 		)
 		(stroke
 			(width 0)
@@ -8387,6 +8644,16 @@
 			(type default)
 		)
 		(uuid "c44c5b64-f4b1-4be5-9582-c08dc405a935")
+	)
+	(wire
+		(pts
+			(xy 72.39 177.8) (xy 72.39 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6956b48-2953-4985-a6b1-ef01adbbe5b0")
 	)
 	(wire
 		(pts
@@ -8460,7 +8727,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 160.02) (xy 73.66 160.02)
+			(xy 69.85 160.02) (xy 72.39 160.02)
 		)
 		(stroke
 			(width 0)
@@ -8650,16 +8917,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 160.02) (xy 82.55 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9279c23-578c-4054-ad9d-8239b1542645")
-	)
-	(wire
-		(pts
 			(xy 86.36 36.83) (xy 86.36 21.59)
 		)
 		(stroke
@@ -8667,6 +8924,16 @@
 			(type default)
 		)
 		(uuid "e9e31d90-e1e6-496c-8115-486a27e3e8f8")
+	)
+	(wire
+		(pts
+			(xy 72.39 160.02) (xy 82.55 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9f1bc9c-c60d-4d30-8f37-c570d4c63657")
 	)
 	(wire
 		(pts
@@ -8680,7 +8947,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 149.86) (xy 55.88 154.94)
+			(xy 54.61 149.86) (xy 54.61 154.94)
 		)
 		(stroke
 			(width 0)
@@ -8740,16 +9007,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 170.18) (xy 82.55 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5cea397-115c-40dd-92e7-9eb7ff8e8c85")
-	)
-	(wire
-		(pts
 			(xy 266.7 146.05) (xy 266.7 153.67)
 		)
 		(stroke
@@ -8757,6 +9014,16 @@
 			(type default)
 		)
 		(uuid "f82dfd9c-0a9e-4411-9f8f-d1e6b77ef633")
+	)
+	(wire
+		(pts
+			(xy 72.39 180.34) (xy 80.01 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa246afc-7a46-40ac-9005-8354bf48400b")
 	)
 	(wire
 		(pts
@@ -9312,7 +9579,7 @@
 	)
 	(global_label "EN"
 		(shape input)
-		(at 71.12 160.02 180)
+		(at 69.85 160.02 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9322,7 +9589,7 @@
 		)
 		(uuid "db9e8e6f-35ed-4900-952e-41471de25308")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 65.6553 160.02 0)
+			(at 64.3853 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9526,71 +9793,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 264.16 24.13 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "05f77327-3d83-4dbe-977c-2ceeec2463ae")
-		(property "Reference" "H3"
-			(at 266.7 22.8599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 266.7 25.3999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KiPLM_Footprints:Hole_2.5mm_Keepout_4mm"
-			(at 264.16 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 264.16 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 264.16 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "main_board"
-				(path "/2b8c9e07-82a8-4f86-b6af-456c1bfba295"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 107.95 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9607,13 +9810,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 110.49 152.9079 0)
+		(property "Value" "Test_Point"
+			(at 107.95 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -9674,7 +9877,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "22uF"
 			(at 114.554 177.292 0)
 			(effects
 				(font
@@ -9826,7 +10029,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 266.7 133.35 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9843,13 +10046,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 271.78 134.6199 90)
+		(property "Value" "Test_Point"
+			(at 271.78 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -10222,7 +10425,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "PTS810SJG250SMTR LFS"
 			(at 266.7 95.504 0)
 			(effects
 				(font
@@ -10328,7 +10531,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 205.74 68.58 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10345,13 +10548,13 @@
 				(justify right)
 			)
 		)
-		(property "Value" "~"
-			(at 208.28 73.152 0)
+		(property "Value" "Test_Point"
+			(at 205.74 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -10394,7 +10597,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 81.28 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10404,7 +10607,7 @@
 		(fields_autoplaced yes)
 		(uuid "182cebeb-3807-4168-9ff2-28228deb79b3")
 		(property "Reference" "TP17"
-			(at 83.82 145.2879 0)
+			(at 83.82 146.5579 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10412,13 +10615,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 83.82 147.8279 0)
+		(property "Value" "Test_Point"
+			(at 81.28 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -10461,71 +10664,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 264.16 29.21 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "18959caa-ee37-48f4-b1f3-e8538d22e8c6")
-		(property "Reference" "H4"
-			(at 266.7 27.9399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 266.7 30.4799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KiPLM_Footprints:Hole_2.5mm_Keepout_4mm"
-			(at 264.16 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 264.16 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 264.16 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "main_board"
-				(path "/2b8c9e07-82a8-4f86-b6af-456c1bfba295"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 255.27 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10542,13 +10681,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 256.5399 88.9 90)
+		(property "Value" "Test_Point"
+			(at 255.27 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -10609,7 +10748,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "32.768kHz"
 			(at 218.44 63.5 0)
 			(effects
 				(font
@@ -10742,7 +10881,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 266.7 153.67 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10759,13 +10898,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 271.78 154.9399 90)
+		(property "Value" "Test_Point"
+			(at 271.78 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -10874,7 +11013,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 53.34 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10891,13 +11030,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 54.6099 74.93 90)
+		(property "Value" "Test_Point"
+			(at 53.34 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -10940,7 +11079,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 43.18 85.09 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10957,13 +11096,13 @@
 				(justify right)
 			)
 		)
-		(property "Value" "~"
-			(at 45.72 89.6619 0)
+		(property "Value" "Test_Point"
+			(at 43.18 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -11006,7 +11145,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 255.27 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11023,13 +11162,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 257.81 61.468 0)
+		(property "Value" "Test_Point"
+			(at 255.27 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -11089,7 +11228,7 @@
 				)
 			)
 		)
-		(property "Value" "Resistor"
+		(property "Value" "22Ω"
 			(at 210.566 132.588 0)
 			(effects
 				(font
@@ -11249,7 +11388,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 43.18 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11266,13 +11405,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 45.72 65.2779 0)
+		(property "Value" "Test_Point"
+			(at 43.18 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -11399,7 +11538,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Resistor"
+		(property "Value" "10kΩ"
 			(at 223.012 148.336 0)
 			(effects
 				(font
@@ -11560,7 +11699,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 107.95 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11577,13 +11716,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 110.49 147.8279 0)
+		(property "Value" "Test_Point"
+			(at 107.95 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -11643,7 +11782,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "1uH"
 			(at 77.216 149.098 0)
 			(effects
 				(font
@@ -11842,8 +11981,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 73.66 160.02 0)
+		(lib_id "KiPLM_Symbols:Test_Point")
+		(at 72.39 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11851,7 +11990,7 @@
 		(dnp no)
 		(uuid "5297bfac-acae-496f-b7b6-7eb4bf23492a")
 		(property "Reference" "TP22"
-			(at 75.184 156.718 0)
+			(at 73.914 156.718 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11859,17 +11998,17 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 76.2 157.9879 0)
+		(property "Value" "Test_Point"
+			(at 72.39 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 78.74 160.02 0)
+			(at 77.47 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11878,7 +12017,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 78.74 160.02 0)
+			(at 77.47 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11887,7 +12026,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 73.66 160.02 0)
+			(at 72.39 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11992,7 +12131,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "22uF"
 			(at 20.574 165.862 0)
 			(effects
 				(font
@@ -12144,7 +12283,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 222.25 142.24 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12154,7 +12293,7 @@
 		(fields_autoplaced yes)
 		(uuid "5f123065-9b09-498c-afd8-a996241533c9")
 		(property "Reference" "TP3"
-			(at 227.33 140.9699 90)
+			(at 227.33 142.2399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12162,13 +12301,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 227.33 143.5099 90)
+		(property "Value" "Test_Point"
+			(at 227.33 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -12229,7 +12368,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "PTS810SJG250SMTR LFS"
 			(at 266.7 65.024 0)
 			(effects
 				(font
@@ -12335,7 +12474,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 107.95 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12352,13 +12491,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 110.49 157.9879 0)
+		(property "Value" "Test_Point"
+			(at 107.95 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -12418,7 +12557,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "PTS810SJG250SMTR LFS"
 			(at 266.7 85.344 0)
 			(effects
 				(font
@@ -12542,7 +12681,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "100uF"
 			(at 266.954 145.542 0)
 			(effects
 				(font
@@ -12694,7 +12833,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 43.18 72.39 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12711,13 +12850,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 45.2121 74.93 0)
+		(property "Value" "Test_Point"
+			(at 48.26 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -12888,7 +13027,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 97.79 21.59 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12905,13 +13044,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 99.06 16.51 90)
+		(property "Value" "Test_Point"
+			(at 97.79 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -12954,7 +13093,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 97.79 24.13 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12970,12 +13109,13 @@
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 95.25 27.432 90)
+		(property "Value" "Test_Point"
+			(at 97.79 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -13018,7 +13158,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 46.99 170.18 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13035,13 +13175,13 @@
 				(justify right)
 			)
 		)
-		(property "Value" "~"
-			(at 49.53 174.7519 0)
+		(property "Value" "Test_Point"
+			(at 46.99 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -13102,7 +13242,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "PTS810SJG250SMTR LFS"
 			(at 266.7 54.864 0)
 			(effects
 				(font
@@ -13272,7 +13412,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 107.95 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13289,13 +13429,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 110.49 163.0679 0)
+		(property "Value" "Test_Point"
+			(at 107.95 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -13332,6 +13472,185 @@
 			(project "main_board"
 				(path "/2b8c9e07-82a8-4f86-b6af-456c1bfba295"
 					(reference "TP25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "KiPLM:RES/RES-0000-0105")
+		(at 72.39 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7fc82ef1-53ac-4e7c-bc3d-b3280ab3e279")
+		(property "Reference" "R5"
+			(at 74.93 173.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 73.152 176.276 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 72.39 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/doc?28773"
+			(at 72.39 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Thick Film Resistors - SMD 1/10Watt 1Mohms 1% Commercial Use"
+			(at 72.39 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Resistance" "1MΩ"
+			(at 74.93 176.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "IPN" "RES-0000-0105"
+			(at 72.39 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CRCW06031M00FKEAC"
+			(at 72.39 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 72.39 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Symbol" "KiPLM_Symbols:Resistor"
+			(at 72.39 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "75V"
+			(at 72.39 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "100mW"
+			(at 72.39 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 72.39 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 72.39 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperature Coefficient" "100PPM/°C"
+			(at 72.39 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser-PN" "71-CRCW06031M00FKEAC"
+			(at 72.39 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey-PN" ""
+			(at 72.39 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6c5cfc0-52e1-42bf-8044-4ef077254748")
+		)
+		(pin "2"
+			(uuid "838393fe-b304-4115-9572-e60ee5a0b581")
+		)
+		(instances
+			(project ""
+				(path "/2b8c9e07-82a8-4f86-b6af-456c1bfba295"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -13470,7 +13789,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 114.3 170.18 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13487,13 +13806,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 116.3321 172.72 0)
+		(property "Value" "Test_Point"
+			(at 119.38 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -13536,7 +13855,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 255.27 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13553,13 +13872,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 257.81 51.308 0)
+		(property "Value" "Test_Point"
+			(at 255.27 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -13774,7 +14093,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "PTS810SJG250SMTR LFS"
 			(at 266.7 75.184 0)
 			(effects
 				(font
@@ -13898,7 +14217,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "100uF"
 			(at 254.254 145.542 0)
 			(effects
 				(font
@@ -14050,7 +14369,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 46.99 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14067,13 +14386,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 49.53 80.5179 0)
+		(property "Value" "Test_Point"
+			(at 46.99 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -14116,7 +14435,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 205.74 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14133,13 +14452,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 208.28 64.0079 0)
+		(property "Value" "Test_Point"
+			(at 205.74 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -14330,7 +14649,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "100uF"
 			(at 241.554 145.542 0)
 			(effects
 				(font
@@ -14574,7 +14893,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser-PN" ""
+		(property "Mouser-PN" "534-2991"
 			(at 201.93 144.78 0)
 			(effects
 				(font
@@ -14605,7 +14924,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 255.27 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14622,13 +14941,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 257.81 71.628 0)
+		(property "Value" "Test_Point"
+			(at 255.27 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -14671,7 +14990,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 255.27 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14688,13 +15007,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 257.81 102.108 0)
+		(property "Value" "Test_Point"
+			(at 255.27 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -14938,7 +15257,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "8pF"
 			(at 225.552 58.166 0)
 			(effects
 				(font
@@ -15155,7 +15474,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 46.99 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15172,13 +15491,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 49.53 163.0679 0)
+		(property "Value" "Test_Point"
+			(at 46.99 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -15239,7 +15558,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Resistor"
+		(property "Value" "10kΩ"
 			(at 41.402 158.496 0)
 			(effects
 				(font
@@ -15416,7 +15735,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "8pF"
 			(at 225.552 68.326 0)
 			(effects
 				(font
@@ -15567,7 +15886,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "KiPLM_Symbols:Test_Point")
 		(at 255.27 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15584,13 +15903,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 257.81 81.788 0)
+		(property "Value" "Test_Point"
+			(at 255.27 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
@@ -15790,7 +16109,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser-PN" ""
+		(property "Mouser-PN" "712-BAT-HLD-001"
 			(at 201.93 144.78 0)
 			(effects
 				(font
@@ -16213,7 +16532,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "PTS810SJG250SMTR LFS"
 			(at 266.7 105.664 0)
 			(effects
 				(font
@@ -16320,7 +16639,7 @@
 	)
 	(symbol
 		(lib_id "KiPLM:RES/RES-0000-0103")
-		(at 55.88 157.48 0)
+		(at 54.61 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16329,7 +16648,7 @@
 		(fields_autoplaced yes)
 		(uuid "fd3d8586-0074-4017-8d82-fb313bea1d36")
 		(property "Reference" "R4"
-			(at 58.42 156.2099 0)
+			(at 57.15 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16337,8 +16656,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Resistor"
-			(at 56.642 158.496 0)
+		(property "Value" "10kΩ"
+			(at 55.372 158.496 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16348,7 +16667,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 55.88 157.48 0)
+			(at 54.61 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16357,7 +16676,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/doc?28773"
-			(at 55.88 157.48 0)
+			(at 54.61 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16366,7 +16685,7 @@
 			)
 		)
 		(property "Description" "Thick Film Resistors - SMD 1/10Watt 10Kohms 1% Commercial Use"
-			(at 55.88 157.48 0)
+			(at 54.61 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16375,7 +16694,7 @@
 			)
 		)
 		(property "Resistance" "10kΩ"
-			(at 58.42 158.7499 0)
+			(at 57.15 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16384,7 +16703,7 @@
 			)
 		)
 		(property "IPN" "RES-0000-0103"
-			(at 55.88 157.48 0)
+			(at 54.61 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16393,7 +16712,7 @@
 			)
 		)
 		(property "MPN" "CRCW060310K0FKEAC"
-			(at 55.88 157.48 0)
+			(at 54.61 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16402,7 +16721,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay"
-			(at 55.88 157.48 0)
+			(at 54.61 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16411,7 +16730,7 @@
 			)
 		)
 		(property "Symbol" "KiPLM_Symbols:Resistor"
-			(at 55.88 157.48 0)
+			(at 54.61 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16420,7 +16739,7 @@
 			)
 		)
 		(property "Voltage" "75V"
-			(at 55.88 157.48 0)
+			(at 54.61 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16429,7 +16748,7 @@
 			)
 		)
 		(property "Power" "100mW"
-			(at 55.88 157.48 0)
+			(at 54.61 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16438,7 +16757,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 55.88 157.48 0)
+			(at 54.61 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16447,7 +16766,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at 55.88 157.48 0)
+			(at 54.61 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16456,7 +16775,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "100 PPM/°C"
-			(at 55.88 157.48 0)
+			(at 54.61 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16465,7 +16784,7 @@
 			)
 		)
 		(property "Mouser-PN" "71-CRCW060310K0FKEAC"
-			(at 55.88 157.48 0)
+			(at 54.61 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16474,7 +16793,7 @@
 			)
 		)
 		(property "DigiKey-PN" ""
-			(at 55.88 157.48 0)
+			(at 54.61 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
