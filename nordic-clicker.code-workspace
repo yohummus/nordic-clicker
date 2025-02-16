@@ -5,6 +5,7 @@
     }
   ],
   "settings": {
+    // FILE EXCLUSIONS
     "files.exclude": {
       "**/.git": true,
       "**/.svn": true,
@@ -19,11 +20,27 @@
       "**/*.bak": true,
       "**/_autosave*": true,
       "**/#*": true,
-      "**/~*": true
+      "**/~*": true,
+      "**/build*": true
     },
+
+    // NRF CONNECT
     "nrf-connect.applications": [
       "${workspaceFolder}/firmware/apps/hardware_test"
     ],
-    "nrf-connect.boardRoots": ["${workspaceFolder}/firmware/boards"]
+    "nrf-connect.boardRoots": ["${workspaceFolder}/firmware/boards"],
+    "files.associations": {
+      "log.h": "c"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-vscode.cpptools",
+      "nordic-semiconductor.nrf-connect",
+      "nordic-semiconductor.nrf-devicetree",
+      "nordic-semiconductor.nrf-kconfig",
+      "nordic-semiconductor.nrf-terminal",
+      "esbenp.prettier-vscode"
+    ]
   }
 }
