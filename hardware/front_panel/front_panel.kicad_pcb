@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1)
 		(legacy_teardrops no)
@@ -9,34 +9,34 @@
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(stackup
@@ -84,9 +84,10 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -96,7 +97,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -104,16 +104,20 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
+			(plot_black_and_white yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
@@ -146,19 +150,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5c75b401-b836-49ff-9d0e-5ce8ba897ac8")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "KiPLM_Footprints:BTNK03"
-			(at 0 -11.39 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d6e9df64-8b1c-4e13-82dc-2fc3f46b52a9")
 			(effects
 				(font
 					(size 1 1)
@@ -558,6 +549,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
 			(offset
 				(xyz -2.8 4.75 -2)
@@ -593,19 +585,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "24e15145-aa1d-4cc2-b95b-eabe571a3d8b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "KiPLM_Footprints:BTNK03"
-			(at 0 -11.39 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "91aa91ee-91d5-4d5f-8330-8a2cb371395e")
 			(effects
 				(font
 					(size 1 1)
@@ -1005,6 +984,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
 			(offset
 				(xyz -2.8 4.75 -2)
@@ -1040,19 +1020,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5727e854-1cfa-42c1-bfa1-b6b1f1191c8f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "KiPLM_Footprints:BTNK03"
-			(at 0 -11.39 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "00cfac3e-e583-43bf-92c1-3ed300c90a98")
 			(effects
 				(font
 					(size 1 1)
@@ -1452,6 +1419,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
 			(offset
 				(xyz -2.8 4.75 -2)
@@ -1487,19 +1455,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "67f51db9-460e-46e9-8365-73032205d24a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "KiPLM_Footprints:BTNK03"
-			(at 0 -11.39 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1fe6b943-05f8-49fc-b3fe-6d619e90411f")
 			(effects
 				(font
 					(size 1 1)
@@ -1899,6 +1854,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
 			(offset
 				(xyz -2.8 4.75 -2)
@@ -1934,19 +1890,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fe91fe43-0fdb-4048-b9f3-6642bea0c250")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "KiPLM_Footprints:BTNK03"
-			(at 0 -11.39 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "06d73f68-93fe-4e8f-aa31-c8d72218b36e")
 			(effects
 				(font
 					(size 1 1)
@@ -2346,6 +2289,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
 			(offset
 				(xyz -2.8 4.75 -2)
@@ -2381,19 +2325,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0e73623c-004c-4e56-af75-dce430cb4fba")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "KiPLM_Footprints:515-130X-XXXXF"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cec35f89-dbb2-4d0a-bebb-bcd646f00356")
 			(effects
 				(font
 					(size 1 1)
@@ -2516,7 +2447,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "c4f17b70-4f20-4968-9c98-0cd531da1392")
 		)
@@ -2527,7 +2458,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "4a86b928-e5b9-4a44-a35b-1686e2d44fbd")
 		)
@@ -2547,9 +2478,10 @@
 			(at 0 0)
 			(size 2.92 2.92)
 			(drill 2.92)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "cdce2219-087f-473e-9923-635badb11b30")
 		)
+		(embedded_fonts no)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/515-1302-0125F.step"
 			(offset
 				(xyz 0 0 0)
@@ -2585,19 +2517,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "dd6fbae1-4510-40bc-8a16-f7bd743d8675")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "KiPLM_Footprints:BTNK03"
-			(at 0 -11.39 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "179cce85-fc0c-4512-9339-e77f321ab6f2")
 			(effects
 				(font
 					(size 1 1)
@@ -2997,6 +2916,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/BTNK03.step"
 			(offset
 				(xyz -2.8 4.75 -2)
@@ -3032,19 +2952,6 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1f7df2d3-7fd3-4651-aede-462d8956e03c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "KiPLM_Footprints:515-130X-XXXXF"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "06277760-cf95-4875-979d-fa565d760c24")
 			(effects
 				(font
 					(size 1 1)
@@ -3167,7 +3074,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "3fc3d653-48bc-49c0-ac48-5f0f37d486cf")
 		)
@@ -3178,7 +3085,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "5286234f-c76c-4a64-9694-0b308be52f67")
 		)
@@ -3198,9 +3105,10 @@
 			(at 0 0)
 			(size 2.92 2.92)
 			(drill 2.92)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "41d74daa-34a0-4c66-a77b-ba1521b4f7a3")
 		)
+		(embedded_fonts no)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/515-1302-0125F.step"
 			(offset
 				(xyz 0 0 0)
@@ -3237,20 +3145,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "c2b48074-d54a-48ed-80a6-44bc5833dfbf")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Footprint" "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "5dcd8de4-70c3-4d87-b748-f4cc71244120")
 			(effects
 				(font
 					(size 1 1)
@@ -3391,9 +3285,10 @@
 		(pad "1" smd circle
 			(at 0 0 180)
 			(size 4 4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(uuid "db417771-8efc-4eb2-b864-b3cab3fc78f0")
 		)
+		(embedded_fonts no)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/Threaded_Insert_M2_3.0mm.step"
 			(offset
 				(xyz 0 0 3)
@@ -3430,20 +3325,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "a9ec2e86-04c8-4a56-9ed3-ae0b95465bfb")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Footprint" "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "7d82d34e-93ac-446c-a218-9346e982651d")
 			(effects
 				(font
 					(size 1 1)
@@ -3584,9 +3465,10 @@
 		(pad "1" smd circle
 			(at 0 0 180)
 			(size 4 4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(uuid "d2d3c38e-df26-4d60-bfa9-5ee1f695a292")
 		)
+		(embedded_fonts no)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/Threaded_Insert_M2_3.0mm.step"
 			(offset
 				(xyz 0 0 3)
@@ -3623,20 +3505,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "7991b035-5d75-401f-ae64-d035a76b1899")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Footprint" "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "385c414e-1714-40dc-94c7-e08bd3a63462")
 			(effects
 				(font
 					(size 1 1)
@@ -3777,9 +3645,10 @@
 		(pad "1" smd circle
 			(at 0 0 180)
 			(size 4 4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(uuid "771c5f85-1f1a-4427-9f0e-f51e2244e53e")
 		)
+		(embedded_fonts no)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/Threaded_Insert_M2_3.0mm.step"
 			(offset
 				(xyz 0 0 3)
@@ -3816,20 +3685,6 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "00836fa9-1d2a-49c4-925b-b117922e0225")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Footprint" "KiPLM_Footprints:Threaded_Insert_M2_3.0mm_SMT"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "860a2af0-5282-4361-ac03-d4ff7d903017")
 			(effects
 				(font
 					(size 1 1)
@@ -3970,9 +3825,10 @@
 		(pad "1" smd circle
 			(at 0 0 180)
 			(size 4 4)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(uuid "1991e781-f1b7-4ecf-bb85-a0d609e0a976")
 		)
+		(embedded_fonts no)
 		(model "${KIPLM_DIR}/kicad_libs/3d_models/Threaded_Insert_M2_3.0mm.step"
 			(offset
 				(xyz 0 0 3)
@@ -4068,19 +3924,6 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "d37d1928-d540-4382-ba4e-542244bc6d2b")
-	)
-	(gr_text "Nordic Clicker\nfront panel\nRev: A"
-		(at 119.2 143.9 0)
-		(layer "B.SilkS" knockout)
-		(uuid "e832d8eb-48e8-4191-b694-3b4863b94480")
-		(effects
-			(font
-				(size 1.2 1.2)
-				(thickness 0.25)
-				(bold yes)
-			)
-			(justify left bottom mirror)
-		)
 	)
 	(gr_text "FEEDBACK"
 		(at 106.1 108.7035 0)
@@ -4186,4 +4029,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "Nordic Clicker\nfront panel\nRev: A"
+		(at 119.2 143.9 0)
+		(layer "B.SilkS" knockout)
+		(uuid "e832d8eb-48e8-4191-b694-3b4863b94480")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(embedded_fonts no)
 )
