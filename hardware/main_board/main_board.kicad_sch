@@ -2925,241 +2925,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "KiPLM:RES/RES-0000-0103"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0.762 0.508 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "10kΩ"
-				(at 0.762 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.vishay.com/doc?28773"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Thick Film Resistors - SMD 1/10Watt 10Kohms 1% Commercial Use"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Resistance" "10kΩ"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "IPN" "RES-0000-0103"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MPN" "CRCW060310K0FKEAC"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "Vishay"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Symbol" "KiPLM_Symbols:Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Voltage" "75V"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Power" "100mW"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Tolerance" "1%"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Package" "0603"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Temperature Coefficient" "100 PPM/°C"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Mouser-PN" "71-CRCW060310K0FKEAC"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "DigiKey-PN" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Resistor_SMD:R_0603_1608Metric"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "RES/RES-0000-0103_0_1"
-				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "RES/RES-0000-0103_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "KiPLM:RES/RES-0000-0105"
 			(pin_numbers
 				(hide yes)
@@ -3591,6 +3356,241 @@
 				)
 			)
 			(symbol "RES/RES-0000-0220_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "KiPLM:RES/RES-0000-0473"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "4.7kΩ"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/doc?28773"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Thick Film Resistors - SMD 1/10Watt 4.7Kohms 1% Commercial Use"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Resistance" "4.7kΩ"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "IPN" "RES-0000-0473"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "CRCW06034K70FKEAC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Vishay"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Symbol" "KiPLM_Symbols:Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Voltage" "75V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Power" "100mW"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Tolerance" "1%"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" "0603"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Temperature Coefficient" "100PPM/°C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser-PN" "71-CRCW06034K70FKEAC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "DigiKey-PN" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Resistor_SMD:R_0603_1608Metric"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RES/RES-0000-0473_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RES/RES-0000-0473_1_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 0.762)
@@ -6289,13 +6289,14 @@
 					(justify left)
 				)
 			)
-			(property "Value" "TP0610T"
+			(property "Value" "SI2323DDS-T1-GE3"
 				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
+					(hide yes)
 				)
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
@@ -11604,7 +11605,7 @@
 		)
 	)
 	(symbol
-		(lib_id "KiPLM:RES/RES-0000-0103")
+		(lib_id "KiPLM:RES/RES-0000-0473")
 		(at 222.25 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11622,7 +11623,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10kΩ"
+		(property "Value" "4.7kΩ"
 			(at 223.012 148.336 0)
 			(effects
 				(font
@@ -11650,7 +11651,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick Film Resistors - SMD 1/10Watt 10Kohms 1% Commercial Use"
+		(property "Description" "Thick Film Resistors - SMD 1/10Watt 4.7Kohms 1% Commercial Use"
 			(at 222.25 147.32 0)
 			(effects
 				(font
@@ -11659,7 +11660,7 @@
 				(hide yes)
 			)
 		)
-		(property "Resistance" "10kΩ"
+		(property "Resistance" "4.7kΩ"
 			(at 224.79 148.5899 0)
 			(effects
 				(font
@@ -11668,7 +11669,7 @@
 				(justify left)
 			)
 		)
-		(property "IPN" "RES-0000-0103"
+		(property "IPN" "RES-0000-0473"
 			(at 222.25 147.32 0)
 			(effects
 				(font
@@ -11677,7 +11678,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW060310K0FKEAC"
+		(property "MPN" "CRCW06034K70FKEAC"
 			(at 222.25 147.32 0)
 			(effects
 				(font
@@ -11740,7 +11741,7 @@
 				(hide yes)
 			)
 		)
-		(property "Temperature Coefficient" "100 PPM/°C"
+		(property "Temperature Coefficient" "100PPM/°C"
 			(at 222.25 147.32 0)
 			(effects
 				(font
@@ -11749,7 +11750,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser-PN" "71-CRCW060310K0FKEAC"
+		(property "Mouser-PN" "71-CRCW06034K70FKEAC"
 			(at 222.25 147.32 0)
 			(effects
 				(font
@@ -13000,7 +13001,7 @@
 				)
 			)
 		)
-		(property "Value" "TP0610T"
+		(property "Value" "SI2323DDS-T1-GE3"
 			(at 222.25 129.54 90)
 			(effects
 				(font
@@ -15624,7 +15625,7 @@
 		)
 	)
 	(symbol
-		(lib_id "KiPLM:RES/RES-0000-0103")
+		(lib_id "KiPLM:RES/RES-0000-0473")
 		(at 40.64 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15642,7 +15643,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10kΩ"
+		(property "Value" "4.7kΩ"
 			(at 41.402 158.496 0)
 			(effects
 				(font
@@ -15670,7 +15671,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick Film Resistors - SMD 1/10Watt 10Kohms 1% Commercial Use"
+		(property "Description" "Thick Film Resistors - SMD 1/10Watt 4.7Kohms 1% Commercial Use"
 			(at 40.64 157.48 0)
 			(effects
 				(font
@@ -15679,7 +15680,7 @@
 				(hide yes)
 			)
 		)
-		(property "Resistance" "10kΩ"
+		(property "Resistance" "4.7kΩ"
 			(at 43.18 158.7499 0)
 			(effects
 				(font
@@ -15688,7 +15689,7 @@
 				(justify left)
 			)
 		)
-		(property "IPN" "RES-0000-0103"
+		(property "IPN" "RES-0000-0473"
 			(at 40.64 157.48 0)
 			(effects
 				(font
@@ -15697,7 +15698,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW060310K0FKEAC"
+		(property "MPN" "CRCW06034K70FKEAC"
 			(at 40.64 157.48 0)
 			(effects
 				(font
@@ -15760,7 +15761,7 @@
 				(hide yes)
 			)
 		)
-		(property "Temperature Coefficient" "100 PPM/°C"
+		(property "Temperature Coefficient" "100PPM/°C"
 			(at 40.64 157.48 0)
 			(effects
 				(font
@@ -15769,7 +15770,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser-PN" "71-CRCW060310K0FKEAC"
+		(property "Mouser-PN" "71-CRCW06034K70FKEAC"
 			(at 40.64 157.48 0)
 			(effects
 				(font
@@ -16722,7 +16723,7 @@
 		)
 	)
 	(symbol
-		(lib_id "KiPLM:RES/RES-0000-0103")
+		(lib_id "KiPLM:RES/RES-0000-0473")
 		(at 54.61 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16740,7 +16741,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10kΩ"
+		(property "Value" "4.7kΩ"
 			(at 55.372 158.496 0)
 			(effects
 				(font
@@ -16768,7 +16769,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Thick Film Resistors - SMD 1/10Watt 10Kohms 1% Commercial Use"
+		(property "Description" "Thick Film Resistors - SMD 1/10Watt 4.7Kohms 1% Commercial Use"
 			(at 54.61 157.48 0)
 			(effects
 				(font
@@ -16777,7 +16778,7 @@
 				(hide yes)
 			)
 		)
-		(property "Resistance" "10kΩ"
+		(property "Resistance" "4.7kΩ"
 			(at 57.15 158.7499 0)
 			(effects
 				(font
@@ -16786,7 +16787,7 @@
 				(justify left)
 			)
 		)
-		(property "IPN" "RES-0000-0103"
+		(property "IPN" "RES-0000-0473"
 			(at 54.61 157.48 0)
 			(effects
 				(font
@@ -16795,7 +16796,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW060310K0FKEAC"
+		(property "MPN" "CRCW06034K70FKEAC"
 			(at 54.61 157.48 0)
 			(effects
 				(font
@@ -16858,7 +16859,7 @@
 				(hide yes)
 			)
 		)
-		(property "Temperature Coefficient" "100 PPM/°C"
+		(property "Temperature Coefficient" "100PPM/°C"
 			(at 54.61 157.48 0)
 			(effects
 				(font
@@ -16867,7 +16868,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser-PN" "71-CRCW060310K0FKEAC"
+		(property "Mouser-PN" "71-CRCW06034K70FKEAC"
 			(at 54.61 157.48 0)
 			(effects
 				(font

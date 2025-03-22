@@ -9,7 +9,7 @@
 	chosen {
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
-		zephyr,code-partition = &slot0_partition;
+		zephyr,console = &uart0;
 	};
 
 	outputs {
@@ -55,34 +55,6 @@
 	};
 };
 
-&flash0 {
-	partitions {
-		compatible = "fixed-partitions";
-		#address-cells = <1>;
-		#size-cells = <1>;
-
-		boot_partition: partition@0 {
-			label = "mcuboot";
-			reg = <0x00000000 DT_SIZE_K(48)>;
-		};
-
-		slot0_partition: partition@c000 {
-			label = "image-0";
-			reg = <0x0000c000 DT_SIZE_K(472)>;
-		};
-
-		slot1_partition: partition@82000 {
-			label = "image-1";
-			reg = <0x00082000 DT_SIZE_K(472)>;
-		};
-
-		storage_partition: partition@f8000 {
-			label = "storage";
-			reg = <0x000f8000 DT_SIZE_K(32)>;
-		};
-	};
-};
-
 &gpio0 {
 	status = "okay";
 };
@@ -101,8 +73,7 @@
 	pinctrl-0 = <&i2c0_default>;
 	pinctrl-1 = <&i2c0_sleep>;
 	pinctrl-names = "default", "sleep";
-	// clock-frequency = <I2C_BITRATE_FAST>;
-	clock-frequency = <I2C_BITRATE_STANDARD>;
+	clock-frequency = <I2C_BITRATE_FAST>;
 };
 
 &pwm0 {

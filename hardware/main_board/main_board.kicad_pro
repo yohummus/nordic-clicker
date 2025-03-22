@@ -486,7 +486,25 @@
       "KiPLM - STC",
       "KiPLM - MEC",
       "KiPLM_Symbols",
-      "KiPLM - AUD"
+      "KiPLM - AUD",
+      "KiPLM - ICS",
+      "KiPLM - CON",
+      "KiPLM - IND",
+      "KiPLM - OPT",
+      "KiPLM - OSC",
+      "KiPLM - PWR",
+      "KiPLM - RFM",
+      "KiPLM - SWI",
+      "KiPLM - CAP",
+      "KiPLM - CBL",
+      "KiPLM - CPD",
+      "KiPLM - RES",
+      "KiPLM - ANA",
+      "KiPLM - ART",
+      "KiPLM - DIO",
+      "KiPLM - MCU",
+      "KiPLM - REG",
+      "KiPLM - XTR"
     ]
   },
   "meta": {

@@ -25,11 +25,12 @@
     },
 
     // NRF CONNECT
-    "nrf-connect.applications": [
-      "${workspaceFolder}/firmware/apps/hardware_test"
-    ],
+    "nrf-connect.applications": ["${workspaceFolder}/firmware/app"],
     "nrf-connect.boardRoots": ["${workspaceFolder}/firmware/boards"],
     "files.associations": {
+      "uart.h": "c",
+      "nrf5x.h": "c",
+      "gpio.h": "c",
       "log.h": "c"
     }
   },
