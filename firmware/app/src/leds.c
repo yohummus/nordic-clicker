@@ -2,6 +2,7 @@
 
 #include <zephyr/drivers/gpio.h>
 #include <zephyr/drivers/i2c.h>
+#include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
 
 LOG_MODULE_REGISTER(app_leds);
@@ -290,7 +291,7 @@ struct play_cmd_t {
     leds_finished_cb_t cb;
 };
 
-K_FIFO_DEFINE(play_cmd_fifo);
+K_FIFO_DEFINE(leds_play_cmd_fifo);
 
 // Global state
 static bool led_driver_enabled = false;
@@ -298,6 +299,7 @@ static bool led_driver_enabled = false;
 /*********************************************************************************************************************
  * PRIVATE FUNCTIONS
  *********************************************************************************************************************/
+
 static bool init_gpio_and_i2c() {
     if (!device_is_ready(i2c_dev)) {
         LOG_ERR("I2C device is not ready");
@@ -493,6 +495,7 @@ static void stop_animation() {
 /*********************************************************************************************************************
  * THREADS
  *********************************************************************************************************************/
+
 static void leds_thread_fn() {
     if (!init_gpio_and_i2c()) {
         return;
@@ -507,7 +510,7 @@ static void leds_thread_fn() {
     while (true) {
         // Wait for a new play command or until the finish time has been reached
         k_timeout_t timeout    = sys_timepoint_timeout(finish_time);
-        struct play_cmd_t *cmd = k_fifo_get(&play_cmd_fifo, timeout);
+        struct play_cmd_t *cmd = k_fifo_get(&leds_play_cmd_fifo, timeout);
 
         // Stop the animation (if any) and disable the LED driver
         if (led_driver_enabled) {
@@ -552,6 +555,7 @@ K_THREAD_DEFINE(leds_thread_id, THREAD_STACK_SIZE, leds_thread_fn, NULL, NULL, N
 /*********************************************************************************************************************
  * PUBLIC FUNCTIONS
  *********************************************************************************************************************/
+
 int leds_play(enum leds_led_t led, enum leds_pattern_t pattern, struct leds_color_t color, int reps,
               leds_finished_cb_t cb) {
     struct play_cmd_t *cmd = k_malloc(sizeof(struct play_cmd_t));
@@ -567,7 +571,7 @@ int leds_play(enum leds_led_t led, enum leds_pattern_t pattern, struct leds_colo
     cmd->reps          = reps;
     cmd->cb            = cb;
 
-    k_fifo_put(&play_cmd_fifo, cmd);
+    k_fifo_put(&leds_play_cmd_fifo, cmd);
 
     return 0;
 }

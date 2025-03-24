@@ -23,6 +23,11 @@ static void on_leds_finished(bool aborted) {
     LOG_INF("on_leds_finished(): %s", aborted ? "aborted" : "finished");
 }
 
+static void on_speaker_finished(bool aborted) {
+    LOG_INF("on_speaker_finished(): %s", aborted ? "aborted" : "finished");
+    leds_off();
+}
+
 int main(void) {
     bool ok = true;
     ok &= device_is_ready(uart);
@@ -39,7 +44,6 @@ int main(void) {
     ok &= gpio_pin_configure_dt(&button_5, GPIO_INPUT) == 0;
     ok &= gpio_pin_configure_dt(&button_6, GPIO_INPUT) == 0;
     ok &= bluetooth_init() == 0;
-    ok &= speaker_init() == 0;
 
     if (!ok) {
         LOG_ERR("SHIT: Something is not ready.");
@@ -54,72 +58,9 @@ int main(void) {
         LOG_INF("Still alive %d", i);
         ++i;
 
-        // leds_set_enabled(true);
-        // leds_set_led(LEDS_D1, LEDS_RGB(255, 0, 0), LEDS_FLASH);
-        // k_msleep(5000);
-        // leds_set_enabled(false);
-
         leds_play(LEDS_D1, LEDS_FLASH, LEDS_RGB(255, 255, 255), 3, on_leds_finished);
-        k_msleep(2000);
-        leds_off();
-
-        // speaker_set_frequency(SPEAKER_RESONANT_FREQUENCY);
-        // k_msleep(500);
-        // speaker_set_frequency(0);
-        // k_msleep(2000);
-
-        // int res = uart_tx(uart, "Hello\n\r", 7, 0);
-        // if (res != 0) {
-        //     LOG_ERR("Failed to send data via UART: %d", res);
-        // }
-
-        // printk("Hey dude!\n\r");
-
-        // if ((value & LP5813_CONFIG_ERR_STATUS) == 0) {
-        //     leds_write_lp5813_reg(LP5813_REG_LED_EN_1,
-        //                           LP5813_LED_EN_A0 | LP5813_LED_EN_A1 | LP5813_LED_EN_A2 | LP5813_LED_EN_B0);
-        //     leds_write_lp5813_reg(LP5813_REG_LED_EN_2, LP5813_LED_EN_B1 | LP5813_LED_EN_B2);
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_DC_A0, 0xFF);
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_DC_A1, 0xFF);
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_DC_A2, 0xFF);
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_DC_B0, 0xFF);
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_DC_B1, 0xFF);
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_DC_B2, 0xFF);
-        //     LOG_INF("LEDs enabled");
-
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_PWM_A0, 0x0F);
-        //     k_msleep(500);
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_PWM_A0, 0x00);
-        //     k_msleep(500);
-
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_PWM_A1, 0x0F);
-        //     k_msleep(500);
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_PWM_A1, 0x00);
-        //     k_msleep(500);
-
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_PWM_A2, 0x0F);
-        //     k_msleep(500);
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_PWM_A2, 0x00);
-        //     k_msleep(500);
-
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_PWM_B0, 0x0F);
-        //     k_msleep(500);
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_PWM_B0, 0x00);
-        //     k_msleep(500);
-
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_PWM_B1, 0x0F);
-        //     k_msleep(500);
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_PWM_B1, 0x00);
-        //     k_msleep(500);
-
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_PWM_B2, 0x0F);
-        //     k_msleep(500);
-        //     leds_write_lp5813_reg(LP5813_REG_MANUAL_PWM_B2, 0x00);
-        //     k_msleep(500);
-        // }
-
-        // LOG_INF("Next tick");
-        // k_msleep(100);
+        speaker_play(SPEAKER_MELODY_ERROR, on_speaker_finished);
+        k_msleep(10000);
 
         // // Test buttons
         // LOG_INF("Toggling");

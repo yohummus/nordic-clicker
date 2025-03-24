@@ -6,3 +6,4 @@ ColumnLimit: 120
 AllowShortFunctionsOnASingleLine: false
 AlignConsecutiveAssignments: true
 AlignConsecutiveMacros: true
+AlignArrayOfStructures: Left

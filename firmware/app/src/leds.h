@@ -50,7 +50,7 @@ int leds_play(enum leds_led_t led, enum leds_pattern_t pattern, struct leds_colo
  * This is a convenience function that calls leds_play() with reps set to 0.
  *
  * @retval 0 If successful.
- * @retval <0 Error code if playing the pattern failed.
+ * @retval <0 Error code if stopping the pattern failed.
  */
 int leds_off();
 
