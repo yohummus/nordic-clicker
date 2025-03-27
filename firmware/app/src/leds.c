@@ -11,6 +11,9 @@ LOG_MODULE_REGISTER(app_leds);
 #define THREAD_STACK_SIZE 1024
 #define THREAD_PRIORITY   5
 
+// Maximum LED current as a fraction (0 .. 255) of the GLOBAL_MAX_CURRENT_*
+#define MAX_LED_CURRENT_FRACTION 0x2F
+
 // I2C address of the LP5813 chip (depends on the chip variant)
 #define I2C_ADDR 0x16
 
@@ -20,12 +23,13 @@ LOG_MODULE_REGISTER(app_leds);
 #define LED_AVG_INTENSITY_B 530
 
 // Aliases for registers for the LEDs on our board
-#define REG_AUTO_DC_D1_R   REG_AUTO_DC_A0
-#define REG_AUTO_DC_D1_G   REG_AUTO_DC_A1
-#define REG_AUTO_DC_D1_B   REG_AUTO_DC_A2
-#define REG_AUTO_DC_D2_R   REG_AUTO_DC_B0
-#define REG_AUTO_DC_D2_G   REG_AUTO_DC_B1
-#define REG_AUTO_DC_D2_B   REG_AUTO_DC_B2
+#define REG_AUTO_DC_D1_R REG_AUTO_DC_A0
+#define REG_AUTO_DC_D1_G REG_AUTO_DC_A1
+#define REG_AUTO_DC_D1_B REG_AUTO_DC_A2
+#define REG_AUTO_DC_D2_R REG_AUTO_DC_B0
+#define REG_AUTO_DC_D2_G REG_AUTO_DC_B1
+#define REG_AUTO_DC_D2_B REG_AUTO_DC_B2
+
 #define REG_BASE_ANIM_D1_R REG_BASE_ANIM_LED_A0
 #define REG_BASE_ANIM_D1_G REG_BASE_ANIM_LED_A1
 #define REG_BASE_ANIM_D1_B REG_BASE_ANIM_LED_A2
@@ -56,6 +60,8 @@ LOG_MODULE_REGISTER(app_leds);
 #define REG_CMD_CONTINUE      0x014
 #define REG_LED_EN_1          0x020
 #define REG_LED_EN_2          0x021
+#define REG_FAULT_CLEAR       0x022
+#define REG_SW_RESET          0x023
 #define REG_MANUAL_DC_0       0x030
 #define REG_MANUAL_DC_1       0x031
 #define REG_MANUAL_DC_2       0x032
@@ -210,7 +216,7 @@ LOG_MODULE_REGISTER(app_leds);
 #define TSD_STATUS        0x02
 #define CONFIG_ERR_STATUS 0x01
 
-// For REG_LED_EN_1
+// For REG_DEV_CONFIG_3-6 and REG_LED_EN_1
 #define LED_EN_0  0x01
 #define LED_EN_1  0x02
 #define LED_EN_2  0x04
@@ -220,7 +226,7 @@ LOG_MODULE_REGISTER(app_leds);
 #define LED_EN_A2 0x40
 #define LED_EN_B0 0x80
 
-// For REG_LED_EN_2
+// For REG_DEV_CONFIG_3-6 and REG_LED_EN_2
 #define LED_EN_B1 0x01
 #define LED_EN_B2 0x02
 #define LED_EN_C0 0x04
@@ -276,6 +282,33 @@ LOG_MODULE_REGISTER(app_leds);
 #define REG_OFF_ANIM_AEU3_T12      23
 #define REG_OFF_ANIM_AEU3_T34      24
 #define REG_OFF_ANIM_AEU3_PLAYBACK 25
+
+// For REG_OFF_ANIM_AUTO_PLAYBACK
+#define ACTIVE_AEU_1       0x00
+#define ACTIVE_AEU_1_2     0x10
+#define ACTIVE_AEU_1_2_3   0x20
+#define PLAYBACK_TIMES_1   0x00
+#define PLAYBACK_TIMES_2   0x01
+#define PLAYBACK_TIMES_3   0x02
+#define PLAYBACK_TIMES_4   0x03
+#define PLAYBACK_TIMES_5   0x04
+#define PLAYBACK_TIMES_6   0x05
+#define PLAYBACK_TIMES_7   0x06
+#define PLAYBACK_TIMES_8   0x07
+#define PLAYBACK_TIMES_9   0x08
+#define PLAYBACK_TIMES_10  0x09
+#define PLAYBACK_TIMES_11  0x0A
+#define PLAYBACK_TIMES_12  0x0B
+#define PLAYBACK_TIMES_13  0x0C
+#define PLAYBACK_TIMES_14  0x0D
+#define PLAYBACK_TIMES_15  0x0E
+#define PLAYBACK_TIMES_INF 0x0F
+
+// For REG_OFF_ANIM_AEU*_PLAYBACK
+#define AEU_PLAYBACK_TIMES_1   0x00
+#define AEU_PLAYBACK_TIMES_2   0x01
+#define AEU_PLAYBACK_TIMES_3   0x02
+#define AEU_PLAYBACK_TIMES_INF 0x03
 
 // I2C device and EN output
 static const struct device *i2c_dev      = DEVICE_DT_GET(DT_NODELABEL(i2c0));
@@ -342,6 +375,20 @@ static int lp5813_write_reg(uint16_t reg, uint8_t value) {
     return res;
 }
 
+static int lp5813_write_multiple(uint16_t start_reg, const uint8_t *values, uint32_t num_values) {
+    if (start_reg >> 10) {
+        LOG_ERR("Invalid LP5813 register address: %X", (int)start_reg);
+        return -EINVAL;
+    }
+
+    int res = i2c_burst_write(i2c_dev, (I2C_ADDR << 2) | (start_reg >> 8), start_reg & 0xFF, values, num_values);
+    if (res < 0) {
+        LOG_ERR("Failed to write to LP5813 registers starting from %X", (int)start_reg);
+    }
+
+    return res;
+}
+
 static int lp5813_read_reg(uint16_t reg, uint8_t *value) {
     if (reg >> 10) {
         LOG_ERR("Invalid LP5813 register address: %X", (int)reg);
@@ -359,6 +406,10 @@ static int lp5813_read_reg(uint16_t reg, uint8_t *value) {
 static int lp5813_send_cmd(uint16_t cmd_reg) {
     uint8_t value;
     switch (cmd_reg) {
+        case REG_SW_RESET:
+            value = 0x66;
+            break;
+
         case REG_CMD_UPDATE:
             value = 0x55;
             break;
@@ -402,13 +453,19 @@ static bool enabled_led_driver() {
     res = lp5813_write_reg(REG_CHIP_EN, 0x01);
     if (res != 0) goto error;
 
-    res = lp5813_write_reg(REG_DEV_CONFIG_0, BOOST_VOUT_3V6 | GLOBAL_MAX_CURRENT_51MA);
+    res = lp5813_write_reg(REG_DEV_CONFIG_0, BOOST_VOUT_3V6 | GLOBAL_MAX_CURRENT_25MA5);
     if (res != 0) goto error;
 
     res = lp5813_write_reg(REG_DEV_CONFIG_1, PWM_FRE_24KHZ | LED_MODE_2_SCANS);
     if (res != 0) goto error;
 
     res = lp5813_write_reg(REG_DEV_CONFIG_2, SCAN_ORDER_0_0H | SCAN_ORDER_1_1H);
+    if (res != 0) goto error;
+
+    res = lp5813_write_reg(REG_DEV_CONFIG_3, LED_EN_A0 | LED_EN_A1 | LED_EN_A2 | LED_EN_B0);
+    if (res != 0) goto error;
+
+    res = lp5813_write_reg(REG_DEV_CONFIG_4, LED_EN_B1 | LED_EN_B2);
     if (res != 0) goto error;
 
     res = lp5813_write_reg(REG_DEV_CONFIG_12, 0x0B);  // Avoid incorrect LSD detection
@@ -428,29 +485,23 @@ static bool enabled_led_driver() {
         goto error;
     }
 
-    // Enable the LEDs
-    res = lp5813_write_reg(REG_LED_EN_1, LED_EN_A0 | LED_EN_A1 | LED_EN_A2 | LED_EN_B0);
+    // Set the maximum LED currents
+    res = lp5813_write_reg(REG_AUTO_DC_D1_R, MAX_LED_CURRENT_FRACTION);
     if (res < 0) goto error;
 
-    res = lp5813_write_reg(REG_LED_EN_2, LED_EN_B1 | LED_EN_B2);
+    res = lp5813_write_reg(REG_AUTO_DC_D1_G, MAX_LED_CURRENT_FRACTION);
     if (res < 0) goto error;
 
-    res = lp5813_write_reg(REG_MANUAL_DC_A0, 0xFF);
+    res = lp5813_write_reg(REG_AUTO_DC_D1_B, MAX_LED_CURRENT_FRACTION);
     if (res < 0) goto error;
 
-    res = lp5813_write_reg(REG_MANUAL_DC_A1, 0xFF);
+    res = lp5813_write_reg(REG_AUTO_DC_D2_R, MAX_LED_CURRENT_FRACTION);
     if (res < 0) goto error;
 
-    res = lp5813_write_reg(REG_MANUAL_DC_A2, 0xFF);
+    res = lp5813_write_reg(REG_AUTO_DC_D2_G, MAX_LED_CURRENT_FRACTION);
     if (res < 0) goto error;
 
-    res = lp5813_write_reg(REG_MANUAL_DC_B0, 0xFF);
-    if (res < 0) goto error;
-
-    res = lp5813_write_reg(REG_MANUAL_DC_B1, 0xFF);
-    if (res < 0) goto error;
-
-    res = lp5813_write_reg(REG_MANUAL_DC_B2, 0xFF);
+    res = lp5813_write_reg(REG_AUTO_DC_D2_B, MAX_LED_CURRENT_FRACTION);
     if (res < 0) goto error;
 
     led_driver_enabled = true;
@@ -479,17 +530,98 @@ static bool disable_led_driver() {
 
 static bool start_animation(enum leds_led_t led, enum leds_pattern_t pattern, struct leds_color_t color, int reps,
                             k_timepoint_t *finish_time) {
-    lp5813_write_reg(REG_MANUAL_PWM_A0, 0x0F);
-    lp5813_write_reg(REG_MANUAL_PWM_B1, 0x0F);
-    *finish_time = sys_timepoint_calc(K_FOREVER);
-    // LOG_ERR("Failed to start the animation");
-    return true;
-}
+    // Stop the current animation if one is playing
+    lp5813_send_cmd(REG_CMD_STOP);
 
-static void stop_animation() {
-    // lp5813_send_cmd(REG_CMD_STOP);
-    lp5813_write_reg(REG_MANUAL_PWM_A0, 0x0);
-    lp5813_write_reg(REG_MANUAL_PWM_B1, 0x0);
+    // If reps == 0, we do not start a new animation
+    if (reps == 0) {
+        *finish_time = sys_timepoint_calc(K_FOREVER);
+        return true;
+    }
+
+    // Convert the number of repetitions to the appropriate value for the LP5813 register
+    if (reps < -1 || reps > 15) {
+        LOG_ERR("Invalid number of repetitions: %d", reps);
+        return false;
+    }
+
+    uint8_t playback_times = reps == -1 ? PLAYBACK_TIMES_INF : (uint8_t)(reps - 1);
+
+    // Make an indexable arrays for colors and base register addresses
+    uint8_t rgb_brightnesses[] = {color.r, color.g, color.b};
+    uint16_t reg_base_d1[]     = {REG_BASE_ANIM_D1_R, REG_BASE_ANIM_D1_G, REG_BASE_ANIM_D1_B};
+    uint16_t reg_base_d2[]     = {REG_BASE_ANIM_D2_R, REG_BASE_ANIM_D2_G, REG_BASE_ANIM_D2_B};
+    uint16_t *reg_base_sel     = led == LEDS_D1 ? reg_base_d1 : reg_base_d2;
+
+    // Calculate timing information for the AEU registers and for the finish time
+    uint8_t dur_fade_in  = DUR_0_MS;
+    uint8_t dur_on       = DUR_0_MS;
+    uint8_t dur_fade_out = DUR_0_MS;
+    uint8_t dur_off      = DUR_0_MS;
+
+    switch (pattern) {
+        case LEDS_SOLID:
+            *finish_time = sys_timepoint_calc(K_FOREVER);
+            break;
+
+        case LEDS_FLASH:
+            dur_on       = DUR_540_MS;
+            dur_off      = DUR_540_MS;
+            *finish_time = sys_timepoint_calc(K_MSEC(reps * (540 + 540)));
+            break;
+
+        case LEDS_BREATHE:
+            dur_fade_in  = DUR_540_MS;
+            dur_fade_out = DUR_540_MS;
+            *finish_time = sys_timepoint_calc(K_MSEC(reps * (540 + 540)));
+            break;
+
+        default:
+            LOG_ERR("Invalid LED pattern: %d", pattern);
+            return false;
+    }
+
+    // Assign the registers according to the given LED pattern
+    for (int i = 0; i < 3; ++i) {
+        uint8_t brightness     = rgb_brightnesses[i];
+        uint8_t brightness_off = pattern == LEDS_SOLID ? brightness : 0;
+
+        uint8_t values[] = {
+            (DUR_0_MS << 4) | DUR_0_MS,     // Auto_Pause
+            ACTIVE_AEU_1 | playback_times,  // Auto_Playback
+            brightness_off,                 // AEU1_PWM_1
+            brightness,                     // AEU1_PWM_2
+            brightness,                     // AEU1_PWM_3
+            brightness_off,                 // AEU1_PWM_4
+            brightness_off,                 // AEU1_PWM_5
+            (dur_on << 4) | dur_fade_in,    // AEU1_T12
+            (dur_off << 4) | dur_fade_out,  // AEU1_T34
+            AEU_PLAYBACK_TIMES_1,           // AEU1_Playback
+        };
+
+        lp5813_write_multiple(reg_base_sel[i], values, sizeof(values));
+    }
+
+    // Enable only the selected RGB LED (otherwise we get some pre-programmed animations - datasheet error?)
+    uint8_t led_en_vals[2];
+    if (led == LEDS_D1) {
+        led_en_vals[0] = LED_EN_A0 | LED_EN_A1 | LED_EN_A2;
+        led_en_vals[1] = 0;
+    } else {
+        led_en_vals[0] = LED_EN_B0;
+        led_en_vals[1] = LED_EN_B1 | LED_EN_B2;
+    }
+
+    if (lp5813_write_multiple(REG_LED_EN_1, led_en_vals, sizeof(led_en_vals)) != 0) goto error;
+
+    // Start the animation
+    if (lp5813_send_cmd(REG_CMD_UPDATE) != 0) goto error;
+    if (lp5813_send_cmd(REG_CMD_START) != 0) goto error;
+    return true;
+
+error:
+    LOG_ERR("Failed to start the animation");
+    return false;
 }
 
 /*********************************************************************************************************************
@@ -512,9 +644,8 @@ static void leds_thread_fn() {
         k_timeout_t timeout    = sys_timepoint_timeout(finish_time);
         struct play_cmd_t *cmd = k_fifo_get(&leds_play_cmd_fifo, timeout);
 
-        // Stop the animation (if any) and disable the LED driver
+        // Disable the LED driver (LED driver will go into low-power mode)
         if (led_driver_enabled) {
-            stop_animation();
             disable_led_driver();
         }
 
@@ -527,6 +658,7 @@ static void leds_thread_fn() {
 
         // If we didn't receive a command, wait for the next one
         if (!cmd) {
+            finish_time = sys_timepoint_calc(K_FOREVER);
             continue;
         }
 

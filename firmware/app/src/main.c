@@ -58,9 +58,11 @@ int main(void) {
         LOG_INF("Still alive %d", i);
         ++i;
 
-        leds_play(LEDS_D1, LEDS_FLASH, LEDS_RGB(255, 255, 255), 3, on_leds_finished);
+        leds_play(LEDS_D2, LEDS_BREATHE, LEDS_RGB(100, 100, 0), 2, on_leds_finished);
         speaker_play(SPEAKER_MELODY_ERROR, on_speaker_finished);
         k_msleep(10000);
+        // leds_play(LEDS_D1, LEDS_SOLID, LEDS_RGB(255, 0, 0), 0, NULL);
+        // k_msleep(1000);
 
         // // Test buttons
         // LOG_INF("Toggling");
