@@ -108,6 +108,7 @@ K_FIFO_DEFINE(speaker_play_cmd_fifo);
 /*********************************************************************************************************************
  * PRIVATE FUNCTIONS
  *********************************************************************************************************************/
+
 static const struct melody_note_t *get_melody(enum speaker_melody_t melody) {
     switch (melody) {
         case SPEAKER_MELODY_SUCCESS: {

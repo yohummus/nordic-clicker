@@ -599,7 +599,7 @@ static bool start_animation(enum leds_led_t led, enum leds_pattern_t pattern, st
             AEU_PLAYBACK_TIMES_1,           // AEU1_Playback
         };
 
-        lp5813_write_multiple(reg_base_sel[i], values, sizeof(values));
+        lp5813_write_multiple(reg_base_sel[i], values, ARRAY_SIZE(values));
     }
 
     // Enable only the selected RGB LED (otherwise we get some pre-programmed animations - datasheet error?)
@@ -612,7 +612,7 @@ static bool start_animation(enum leds_led_t led, enum leds_pattern_t pattern, st
         led_en_vals[1] = LED_EN_B1 | LED_EN_B2;
     }
 
-    if (lp5813_write_multiple(REG_LED_EN_1, led_en_vals, sizeof(led_en_vals)) != 0) goto error;
+    if (lp5813_write_multiple(REG_LED_EN_1, led_en_vals, ARRAY_SIZE(led_en_vals)) != 0) goto error;
 
     // Start the animation
     if (lp5813_send_cmd(REG_CMD_UPDATE) != 0) goto error;
