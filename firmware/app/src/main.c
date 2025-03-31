@@ -21,7 +21,6 @@ static void on_speaker_finished(bool aborted) {
 
 int main(void) {
     bool ok = true;
-    ok &= buttons_init() == 0;
     ok &= bluetooth_init() == 0;
 
     if (!ok) {
@@ -33,7 +32,7 @@ int main(void) {
 
     int i = 0;
     while (1) {
-        k_msleep(1000);
+        // k_msleep(1000);
         LOG_INF("Still alive %d", i);
         ++i;
 
@@ -41,7 +40,12 @@ int main(void) {
         // speaker_play(SPEAKER_MELODY_ERROR, on_speaker_finished);
         // k_msleep(10000);
 
-        k_msleep(3000);
+        // k_msleep(3000);
+        struct buttons_event_t event;
+        if (buttons_get_event(&event, K_SECONDS(1)) == 0) {
+            LOG_INF("Button: %d, long: %d, shift: %d", event.button + 1, event.is_long_press,
+                    event.preceding_short_shift_presses);
+        }
     }
 
     return 0;
