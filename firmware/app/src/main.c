@@ -32,16 +32,19 @@ int main(void) {
         // speaker_play(SPEAKER_MELODY_ERROR, on_speaker_finished);
         // k_msleep(10000);
 
-        // k_msleep(3000);
-        struct buttons_event_t event;
-        if (buttons_get_event(&event, K_SECONDS(1)) == 0) {
-            LOG_INF("Button: %d, long: %d, shift: %d", event.button + 1, event.is_long_press,
-                    event.preceding_short_shift_presses);
+        k_msleep(1000);
+        int volts = battery_get_voltage();
+        LOG_ERR("Battery voltage: %d", volts);
 
-            if (event.button == BUTTONS_BTN_3) {
-                sys_poweroff();
-            }
-        }
+        // struct buttons_event_t event;
+        // if (buttons_get_event(&event, K_SECONDS(1)) == 0) {
+        //     LOG_INF("Button: %d, long: %d, shift: %d", event.button + 1, event.is_long_press,
+        //             event.preceding_short_shift_presses);
+
+        //     if (event.button == BUTTONS_BTN_3) {
+        //         sys_poweroff();
+        //     }
+        // }
     }
 
     return 0;

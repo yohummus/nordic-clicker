@@ -24,8 +24,10 @@ static const struct bt_data sd[] = {
 // Semaphores
 static K_SEM_DEFINE(bluetooth_ready, 1, 1);
 
-// Internal functions
-void on_bluetooth_ready(int err) {
+/*********************************************************************************************************************
+ * PRIVATE FUNCTIONS
+ *********************************************************************************************************************/
+static void on_bluetooth_ready(int err) {
     if (err) {
         LOG_ERR("on_bluetooth_ready() called with error %d", err);
     }
@@ -33,7 +35,9 @@ void on_bluetooth_ready(int err) {
     k_sem_give(&bluetooth_ready);
 }
 
-// Public functions
+/*********************************************************************************************************************
+ * PUBLIC FUNCTIONS
+ *********************************************************************************************************************/
 int bluetooth_init() {
     LOG_INF("Initializing Bluetooth...");
 

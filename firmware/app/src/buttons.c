@@ -53,7 +53,6 @@ static uint32_t gpio_latch_at_startup[2] = {0};
 /*********************************************************************************************************************
  * STARTUP HOOKS
  *********************************************************************************************************************/
-
 static int detect_wakup_latch() {
     nrf_gpio_latches_read(0, ARRAY_SIZE(gpio_latch_at_startup), gpio_latch_at_startup);
     return 0;
@@ -64,7 +63,6 @@ SYS_INIT(detect_wakup_latch, PRE_KERNEL_1, 0);
 /*********************************************************************************************************************
  * INTERRUPT HANDLERS
  *********************************************************************************************************************/
-
 static void button_pressed(const struct device *port, struct gpio_callback *cb, gpio_port_pins_t pins) {
     // Signal the thread to check for button presses/releases
     k_sem_give(&buttons_sem);
@@ -73,7 +71,6 @@ static void button_pressed(const struct device *port, struct gpio_callback *cb, 
 /*********************************************************************************************************************
  * PRIVATE FUNCTIONS
  *********************************************************************************************************************/
-
 static bool setup_gpios_and_interrupts() {
     for (int i = 0; i < ARRAY_SIZE(buttons); i++) {
         struct button_t *btn = &buttons[i];
@@ -124,7 +121,6 @@ static bool is_button_pressed(const struct button_t *btn) {
 /*********************************************************************************************************************
  * THREADS
  *********************************************************************************************************************/
-
 static void buttons_thread_fn() {
     if (!setup_gpios_and_interrupts()) {
         return;
@@ -205,7 +201,6 @@ K_THREAD_DEFINE(buttons_thread_id, THREAD_STACK_SIZE, buttons_thread_fn, NULL, N
 /*********************************************************************************************************************
  * PUBLIC FUNCTIONS
  *********************************************************************************************************************/
-
 int buttons_get_event(struct buttons_event_t *event, k_timeout_t timeout) {
     struct buttons_fifo_item_t *item = k_fifo_get(&buttons_fifo, timeout);
     if (item == NULL) {

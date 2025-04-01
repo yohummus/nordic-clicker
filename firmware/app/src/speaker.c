@@ -108,7 +108,6 @@ K_FIFO_DEFINE(speaker_play_cmd_fifo);
 /*********************************************************************************************************************
  * PRIVATE FUNCTIONS
  *********************************************************************************************************************/
-
 static const struct melody_note_t *get_melody(enum speaker_melody_t melody) {
     switch (melody) {
         case SPEAKER_MELODY_SUCCESS: {
@@ -254,7 +253,6 @@ static int put_play_cmd(const struct melody_note_t *melody, speaker_finished_cb_
 /*********************************************************************************************************************
  * THREADS
  *********************************************************************************************************************/
-
 static void speaker_thread_fn() {
     if (!device_is_ready(pwm)) {
         LOG_ERR("PWM device is not ready");
@@ -327,7 +325,6 @@ K_THREAD_DEFINE(speaker_thread_id, THREAD_STACK_SIZE, speaker_thread_fn, NULL, N
 /*********************************************************************************************************************
  * PUBLIC FUNCTIONS
  *********************************************************************************************************************/
-
 int speaker_play(enum speaker_melody_t melody, speaker_finished_cb_t cb) {
     return put_play_cmd(get_melody(melody), cb);
 }

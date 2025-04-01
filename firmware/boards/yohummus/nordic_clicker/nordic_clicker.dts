@@ -53,6 +53,10 @@
 			zephyr,code = <INPUT_BTN_6>;
 		};
 	};
+
+	zephyr,user {
+		io-channels = <&adc 0>;
+	};
 };
 
 &gpio0 {
@@ -95,4 +99,18 @@
 	pinctrl-0 = <&uart0_default>;
 	pinctrl-1 = <&uart0_sleep>;
 	pinctrl-names = "default", "sleep";
+};
+
+&adc {
+	#address-cells = <1>;
+	#size-cells = <0>;
+	status = "okay";
+	channel@0 {
+		reg = <0>;
+		zephyr,gain = "ADC_GAIN_1_6";
+		zephyr,reference = "ADC_REF_INTERNAL";
+		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+		zephyr,input-positive = <9>;  // 9 = VDD
+		zephyr,resolution = <12>;
+	};
 };

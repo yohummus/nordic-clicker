@@ -332,7 +332,6 @@ static bool led_driver_enabled = false;
 /*********************************************************************************************************************
  * PRIVATE FUNCTIONS
  *********************************************************************************************************************/
-
 static bool init_gpio_and_i2c() {
     if (!device_is_ready(i2c_dev)) {
         LOG_ERR("I2C device is not ready");
@@ -627,7 +626,6 @@ error:
 /*********************************************************************************************************************
  * THREADS
  *********************************************************************************************************************/
-
 static void leds_thread_fn() {
     if (!init_gpio_and_i2c()) {
         return;
@@ -687,7 +685,6 @@ K_THREAD_DEFINE(leds_thread_id, THREAD_STACK_SIZE, leds_thread_fn, NULL, NULL, N
 /*********************************************************************************************************************
  * PUBLIC FUNCTIONS
  *********************************************************************************************************************/
-
 int leds_play(enum leds_led_t led, enum leds_pattern_t pattern, struct leds_color_t color, int reps,
               leds_finished_cb_t cb) {
     struct play_cmd_t *cmd = k_malloc(sizeof(struct play_cmd_t));
