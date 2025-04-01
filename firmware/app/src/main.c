@@ -11,14 +11,6 @@
 
 LOG_MODULE_REGISTER(app_main);
 
-static void on_leds_finished(bool aborted) {
-    LOG_INF("on_leds_finished(): %s", aborted ? "aborted" : "finished");
-}
-
-static void on_speaker_finished(bool aborted) {
-    LOG_INF("on_speaker_finished(): %s", aborted ? "aborted" : "finished");
-}
-
 int main(void) {
     bool ok = true;
     ok &= bluetooth_init() == 0;
@@ -45,6 +37,10 @@ int main(void) {
         if (buttons_get_event(&event, K_SECONDS(1)) == 0) {
             LOG_INF("Button: %d, long: %d, shift: %d", event.button + 1, event.is_long_press,
                     event.preceding_short_shift_presses);
+
+            if (event.button == BUTTONS_BTN_3) {
+                sys_poweroff();
+            }
         }
     }
 

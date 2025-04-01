@@ -57,10 +57,12 @@
 
 &gpio0 {
 	status = "okay";
+	sense-edge-mask = <0xffffffff>;  // TODO: Refine the mask to only include the pins that are used
 };
 
 &gpio1 {
 	status = "okay";
+	sense-edge-mask = <0xffffffff>;  // TODO: Refine the mask to only include the pins that are used
 };
 
 &gpiote {
