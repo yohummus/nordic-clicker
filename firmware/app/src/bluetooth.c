@@ -22,7 +22,7 @@ static const struct bt_data sd[] = {
 };
 
 // Semaphores
-static K_SEM_DEFINE(bluetooth_ready, 1, 1);
+K_SEM_DEFINE(bluetooth_ready, 1, 1);
 
 /*********************************************************************************************************************
  * PRIVATE FUNCTIONS
