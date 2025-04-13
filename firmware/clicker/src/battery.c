@@ -136,7 +136,9 @@ int battery_get_soc_percent(int bat_voltage_mv) {
         return 50;
     } else if (bat_voltage_mv > 2800) {
         return 5;
-    } else if (bat_voltage_mv < 2500) {
+    } else if (bat_voltage_mv > 2500) {
+        return 1;
+    } else {
         return 0;
     }
 }

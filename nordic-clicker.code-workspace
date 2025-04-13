@@ -25,7 +25,10 @@
     },
 
     // NRF CONNECT
-    "nrf-connect.applications": ["${workspaceFolder}/firmware/app"],
+    "nrf-connect.applications": [
+      "${workspaceFolder}/firmware/clicker",
+      "${workspaceFolder}/firmware/receiver-example"
+    ],
     "nrf-connect.boardRoots": ["${workspaceFolder}/firmware/boards"],
     "files.associations": {
       "uart.h": "c",

@@ -3,9 +3,12 @@
 #include <zephyr/bluetooth/bluetooth.h>
 #include <zephyr/bluetooth/gatt.h>
 #include <zephyr/bluetooth/hci.h>
+#include <zephyr/bluetooth/services/bas.h>
 #include <zephyr/bluetooth/uuid.h>
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
+
+#include "battery.h"
 
 LOG_MODULE_REGISTER(app_bluetooth);
 
@@ -14,11 +17,14 @@ LOG_MODULE_REGISTER(app_bluetooth);
 
 // Advertising data
 static const struct bt_data ad[] = {
-    BT_DATA_BYTES(BT_DATA_FLAGS, (BT_LE_AD_GENERAL | BT_LE_AD_NO_BREDR)),
-    BT_DATA(BT_DATA_NAME_COMPLETE, CONFIG_BT_DEVICE_NAME, (sizeof(CONFIG_BT_DEVICE_NAME) - 1))};
+    BT_DATA_BYTES(BT_DATA_FLAGS, (BT_LE_AD_GENERAL | BT_LE_AD_NO_BREDR)),  //
+    BT_DATA_BYTES(BT_DATA_UUID16_ALL,                                      //
+                  BT_UUID_16_ENCODE(BT_UUID_BAS_VAL)),                     //
+    BT_DATA_BYTES(BT_DATA_UUID128_ALL, BT_UUID_REMOTE_SERV_VAL),           //
+};
 
 static const struct bt_data sd[] = {
-    BT_DATA_BYTES(BT_DATA_UUID128_ALL, BT_UUID_REMOTE_SERV_VAL),
+    BT_DATA(BT_DATA_NAME_COMPLETE, CONFIG_BT_DEVICE_NAME, (sizeof(CONFIG_BT_DEVICE_NAME) - 1)),
 };
 
 // Semaphores
@@ -34,6 +40,12 @@ static void on_bluetooth_ready(int err) {
 
     k_sem_give(&bluetooth_ready);
 }
+
+// static void bas_notify(void) {
+//     int mv  = battery_get_voltage_mv();
+//     int soc = battery_get_soc_percent(mv);
+//     bt_bas_set_battery_level((uint8_t)soc);
+// }
 
 /*********************************************************************************************************************
  * PUBLIC FUNCTIONS
