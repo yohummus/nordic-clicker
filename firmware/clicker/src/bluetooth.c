@@ -1,26 +1,24 @@
 #include "bluetooth.h"
+#include "battery.h"
+#include "services/battery_svc.h"
+#include "services/config_svc.h"
 
 #include <zephyr/bluetooth/bluetooth.h>
 #include <zephyr/bluetooth/gatt.h>
 #include <zephyr/bluetooth/hci.h>
-#include <zephyr/bluetooth/services/bas.h>
 #include <zephyr/bluetooth/uuid.h>
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
 
-#include "battery.h"
-
 LOG_MODULE_REGISTER(app_bluetooth);
-
-// UUIDs
-#define BT_UUID_REMOTE_SERV_VAL BT_UUID_128_ENCODE(0xe9ea0001, 0xe19b, 0x482d, 0x9293, 0xc7907585fc48)
 
 // Advertising data
 static const struct bt_data ad[] = {
-    BT_DATA_BYTES(BT_DATA_FLAGS, (BT_LE_AD_GENERAL | BT_LE_AD_NO_BREDR)),  //
-    BT_DATA_BYTES(BT_DATA_UUID16_ALL,                                      //
-                  BT_UUID_16_ENCODE(BT_UUID_BAS_VAL)),                     //
-    BT_DATA_BYTES(BT_DATA_UUID128_ALL, BT_UUID_REMOTE_SERV_VAL),           //
+    BT_DATA_BYTES(BT_DATA_FLAGS, (BT_LE_AD_GENERAL | BT_LE_AD_NO_BREDR)),  // General flags
+    BT_DATA_BYTES(BT_DATA_UUID16_ALL,                                      // 16-bit UUIDs
+                  BT_UUID_BATTERY_SVC_VAL),                                // Battery Service
+    BT_DATA_BYTES(BT_DATA_UUID128_ALL,                                     // 128-bit UUIDs
+                  BT_UUID_CONFIG_SVC_VAL),                                 // Clicker Service
 };
 
 static const struct bt_data sd[] = {
@@ -41,18 +39,13 @@ static void on_bluetooth_ready(int err) {
     k_sem_give(&bluetooth_ready);
 }
 
-// static void bas_notify(void) {
-//     int mv  = battery_get_voltage_mv();
-//     int soc = battery_get_soc_percent(mv);
-//     bt_bas_set_battery_level((uint8_t)soc);
-// }
-
 /*********************************************************************************************************************
  * PUBLIC FUNCTIONS
  *********************************************************************************************************************/
 int bluetooth_init() {
     LOG_INF("Initializing Bluetooth...");
 
+    // Enable Bluetooth
     int err = bt_enable(on_bluetooth_ready);
     if (err) {
         LOG_ERR("bt_enable() returned %d", err);
@@ -61,6 +54,11 @@ int bluetooth_init() {
 
     k_sem_take(&bluetooth_ready, K_FOREVER);
 
+    // Initialize the services
+    config_svc_init();
+    battery_svc_init();
+
+    // Start advertising
     err = bt_le_adv_start(BT_LE_ADV_CONN, ad, ARRAY_SIZE(ad), sd, ARRAY_SIZE(sd));
     if (err) {
         LOG_ERR("bt_le_adv_start() returned %d", err);

@@ -34,7 +34,10 @@
       "uart.h": "c",
       "nrf5x.h": "c",
       "gpio.h": "c",
-      "log.h": "c"
+      "log.h": "c",
+      "lbs.h": "c",
+      "bas.h": "c",
+      "bluetooth.h": "c"
     }
   },
   "extensions": {

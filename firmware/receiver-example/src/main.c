@@ -1,6 +1,8 @@
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
 
+#include <dk_buttons_and_leds.h>
+
 LOG_MODULE_REGISTER(app_main);
 
 int main(void) {

@@ -6,6 +6,7 @@
 #include "battery.h"
 #include "bluetooth.h"
 #include "buttons.h"
+#include "config.h"
 #include "leds.h"
 #include "speaker.h"
 
@@ -33,8 +34,8 @@ int main(void) {
         // k_msleep(10000);
 
         k_msleep(1000);
-        int mv = battery_get_voltage_mv();
-        LOG_ERR("Battery voltage: %d mV", mv);
+        // int mv = battery_get_voltage_mv();
+        // LOG_ERR("Battery voltage: %d mV", mv);
 
         // struct buttons_event_t event;
         // if (buttons_get_event(&event, K_SECONDS(1)) == 0) {

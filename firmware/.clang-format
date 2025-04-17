@@ -7,3 +7,4 @@ AllowShortFunctionsOnASingleLine: false
 AlignConsecutiveAssignments: true
 AlignConsecutiveMacros: true
 AlignArrayOfStructures: Left
+IncludeBlocks: Preserve
